@@ -1,5 +1,5 @@
 main .background {
-  background-image: url("../assets/back.jpg");
+  background-image: url("/assets/back1.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@ main .background {
   main .background .card {
     border-radius: 2rem;
     width: 37vw;
-    height: 60vh;
+    height: 58vh;
     opacity: 0.7; }
     main .background .card h1 {
       padding: 5% 4% 0% 4%;
@@ -46,6 +46,29 @@ main .background {
         main .background .card .back-botones .boton-conocenos:hover {
           border-color: #FC3657;
           color: #FC3657; }
+
+main .iconos-redondos {
+  padding-top: 2%; }
+  main .iconos-redondos h2 {
+    text-align: center;
+    font-weight: bold; }
+  main .iconos-redondos_body {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .iconos-redondos_body_elemento {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 25vw;
+      padding: 0% 2%; }
+      main .iconos-redondos_body_elemento h3 {
+        font-size: 130%;
+        padding: 8% 0%; }
+      main .iconos-redondos_body_elemento img {
+        height: 20vh; }
 
 header {
   display: flex;
