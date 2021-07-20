@@ -1,3 +1,52 @@
+main .background {
+  background-image: url("../assets/back.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8% 0% 0% 4%; }
+  main .background .card {
+    border-radius: 2rem;
+    width: 37vw;
+    height: 60vh;
+    opacity: 0.7; }
+    main .background .card h1 {
+      padding: 5% 4% 0% 4%;
+      color: #272727;
+      font-weight: 900;
+      font-size: 210%; }
+    main .background .card p {
+      padding: 5% 4% 0% 4%;
+      color: #272727;
+      font-size: 120%; }
+    main .background .card .back-botones {
+      padding: 7% 0% 0% 4%; }
+      main .background .card .back-botones .boton-cursos {
+        color: white;
+        border-color: #FF637D;
+        background-color: #FF637D;
+        width: 11vw;
+        height: 7.5vh;
+        font-size: 130%;
+        font-family: Arial, Helvetica, sans-serif; }
+        main .background .card .back-botones .boton-cursos:hover {
+          border-color: #FC3657;
+          background-color: #FC3657; }
+      main .background .card .back-botones .boton-conocenos {
+        color: #FF637D;
+        border-color: #FF637D;
+        background-color: white;
+        width: 11vw;
+        height: 7.5vh;
+        font-size: 130%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0% 7%; }
+        main .background .card .back-botones .boton-conocenos:hover {
+          border-color: #FC3657;
+          color: #FC3657; }
+
 header {
   display: flex;
   justify-content: space-around;
@@ -45,26 +94,5 @@ header {
         border-color: #FF637D;
         color: #FF637D; }
 
-main .background {
-  background-image: url("../assets/back.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-start;
-  padding: 8% 0% 0% 4%; }
-  main .background h1 {
-    color: white;
-    font-weight: 800;
-    font-size: 300%; }
-  main .background p {
-    padding-top: 5%;
-    color: white;
-    font-size: 150%; }
-  main .background .back-botones {
-    padding-top: 5%; }
-    main .background .back-botones .boton-conocenos {
-      color: white;
-      margin-left: 2%;
-      border-color: white; }
+* {
+  font-family: "Nunito", sans-serif; }
