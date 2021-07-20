@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    nav {
+        width: 30vw;
+        padding-top: 1.8%;
+        a {
+            font-size: 140%;
+            color: black;
+            padding: 0% 2%;
+        }
+    }
+    .a-logo {
+        padding-top: 0.7%;
+        .logo {
+            height: 10vh;
+        }
+    }
+    .a-cart {
+        padding-top: 1.5rem;
+        .icono-cart {
+            height: 5vh;
+        }
+    }
+    .buscador {
+        padding-top: 1.5%;
+        display: flex;
+        
+        input {
+            height: 0.5%;
+            width: 50%;
+            margin: 0% 10%;
+        }
+        button {
+            border-color: black;
+            padding: 1% 4%;
+            height: 5.3vh;
+        }
+    }
+}

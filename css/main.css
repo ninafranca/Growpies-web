@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  justify-content: space-around; }
+  header nav {
+    width: 30vw;
+    padding-top: 1.8%; }
+    header nav a {
+      font-size: 140%;
+      color: black;
+      padding: 0% 2%; }
+  header .a-logo {
+    padding-top: 0.7%; }
+    header .a-logo .logo {
+      height: 10vh; }
+  header .a-cart {
+    padding-top: 1.5rem; }
+    header .a-cart .icono-cart {
+      height: 5vh; }
+  header .buscador {
+    padding-top: 1.5%;
+    display: flex; }
+    header .buscador input {
+      height: 0.5%;
+      width: 50%;
+      margin: 0% 10%; }
+    header .buscador button {
+      border-color: black;
+      padding: 1% 4%;
+      height: 5.3vh; }
+
+main .background {
+  background-image: url("../assets/back.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8% 0% 0% 4%; }
+  main .background h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 300%; }
+  main .background p {
+    padding-top: 5%;
+    color: white;
+    font-size: 150%; }
+  main .background .back-botones {
+    padding-top: 5%; }
+    main .background .back-botones .boton-conocenos {
+      color: white;
+      margin-left: 2%;
+      border-color: white; }

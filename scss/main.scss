@@ -1,0 +1,34 @@
+// IMPORTS
+@import './index.scss';
+@import './header.scss';
+
+main {
+    .background {
+        background-image: url("../assets/back.jpg");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        padding: 8% 0% 0% 4%;
+        h1 {
+            color: white;
+            font-weight: 800;
+            font-size: 300%;
+        }
+        p {
+            padding-top: 5%;
+            color: white;
+            font-size: 150%;
+        }
+        .back-botones {
+            .boton-conocenos {
+                color: white;
+                margin-left: 2%;
+                border-color: white;
+            }
+            padding-top: 5%;
+        }
+    }
+}
