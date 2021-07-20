@@ -1,32 +1,49 @@
 header {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: #f8f8f8; }
   header nav {
     width: 30vw;
-    padding-top: 1.8%; }
+    align-self: center;
+    margin-left: -12%; }
     header nav a {
       font-size: 140%;
       color: black;
       padding: 0% 2%; }
+      header nav a:hover {
+        text-decoration: underline;
+        color: black;
+        text-decoration-color: #FF637D;
+        font-weight: 500; }
   header .a-logo {
+    margin-left: -5%;
     padding-top: 0.7%; }
     header .a-logo .logo {
-      height: 10vh; }
+      height: 11vh; }
   header .a-cart {
-    padding-top: 1.5rem; }
+    padding-top: 1.5rem;
+    margin-right: -5%; }
     header .a-cart .icono-cart {
       height: 5vh; }
   header .buscador {
     padding-top: 1.5%;
+    margin-right: -7%;
     display: flex; }
     header .buscador input {
+      align-self: baseline;
       height: 0.5%;
-      width: 50%;
-      margin: 0% 10%; }
+      width: 20vw;
+      margin: 0% 5%; }
     header .buscador button {
-      border-color: black;
+      align-self: baseline;
+      border-color: #FF637D;
+      color: #FF637D;
       padding: 1% 4%;
-      height: 5.3vh; }
+      height: 6vh;
+      width: 5vw; }
+      header .buscador button:hover {
+        border-color: #FF637D;
+        color: #FF637D; }
 
 main .background {
   background-image: url("../assets/back.jpg");
