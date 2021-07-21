@@ -1,0 +1,169 @@
+.banner {
+    background-image: url(../../assets/hero-cursos.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+
+    h1 {
+        font-weight: 900;
+        color: #FF637D;
+        margin: 4em 0 1em 0;
+    }
+
+    p {
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+}
+
+.recomendados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-weight: 700;
+        margin: 2.5em 0 2em 0;
+    }
+
+    .carrusel-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 4rem;
+
+        .arrow {
+            background-color: #272727;
+            color: #FFFFFF;
+            border-radius: 50%;
+            padding: .15rem .3rem;
+            font-size: .7rem;
+            margin: 0 .3rem;
+        }
+    }
+
+    .contenedor-cards {
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        .arrow {
+            align-self: center;
+        }
+
+        .card {
+            width: 28rem;
+            margin: 0 1rem 2em 1rem;
+            border: 0;
+            flex-grow: 0;
+            flex-shrink: 0;
+            -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+            box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+
+            @media screen and (min-width:768px) {
+                flex-basis: 33.333%;
+            }
+
+            .card-title {
+                font-weight: 800 !important;
+            }
+
+            .card-text {
+                padding: .1em 0 1em 0;
+            }
+
+            .btn {
+                background-color: #FF637D;
+                color: #FFFFFF;
+                font-size: .7rem;
+                letter-spacing: .02rem;
+                padding: .6em 1rem;
+
+                &:hover {
+                    background-color: #FC3657;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0 5em 0;
+
+    .filters-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+
+
+        .filters {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+
+            label {
+                font-weight: 300;
+                margin: .5em 0;
+            }
+
+            select {
+                font-weight: 300;
+                border: .5px solid #27272741;
+                padding: .3em 6rem .3em .7rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .contenedor-videos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            width: 29rem;
+            margin: 1em 0 1em 0;
+            border: 0;
+            -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+            box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+
+            .card-title {
+                font-weight: 800 !important;
+            }
+
+            .card-text {
+                padding: .1em 0 1em 0;
+            }
+
+            .btn {
+                background-color: #FF637D;
+                color: #FFFFFF;
+                font-size: .7rem;
+                letter-spacing: .02rem;
+                padding: .6em 1rem;
+
+                &:hover {
+                    background-color: #FC3657;
+                }
+            }
+        }
+    }
+
+}
