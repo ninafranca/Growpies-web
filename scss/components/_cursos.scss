@@ -29,7 +29,7 @@
     justify-content: center;
 
     h2 {
-        font-weight: 700;
+        font-weight: 900;
         margin: 2.5em 0 2em 0;
     }
 
@@ -39,12 +39,9 @@
         align-items: center;
         margin: 0 4rem;
 
-        .arrow {
-            background-color: #272727;
-            color: #FFFFFF;
-            border-radius: 50%;
-            padding: .15rem .3rem;
-            font-size: .7rem;
+        .arrow i {
+            color: #272727;
+            font-size: 1.3rem;
             margin: 0 .3rem;
         }
     }
@@ -57,9 +54,6 @@
         overflow-x: auto;
         overflow-y: hidden;
 
-        .arrow {
-            align-self: center;
-        }
 
         .card {
             width: 28rem;
@@ -76,10 +70,13 @@
 
             .card-title {
                 font-weight: 800 !important;
+                font-size: 1.1rem;
             }
 
             .card-text {
-                padding: .1em 0 1em 0;
+                padding: .5em 0 1.8em 0;
+                font-size: .9rem;
+                font-weight: 300;
             }
 
             .btn {
@@ -93,18 +90,27 @@
                     background-color: #FC3657;
                 }
             }
+
+            .card-price {
+                font-weight: 900;
+                font-size: 1.3rem;
+                padding-right: .4rem;
+            }
         }
 
     }
 }
-
-
 
 .videos {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 3em 0 5em 0;
+
+    h2 {
+        font-weight: 900;
+        margin: 2.5em 0 2em 0;
+    }
 
     .filters-container {
         display: flex;
@@ -146,10 +152,13 @@
 
             .card-title {
                 font-weight: 800 !important;
+                font-size: 1.1rem;
             }
 
             .card-text {
-                padding: .1em 0 1em 0;
+                padding: .5em 0 1.8em 0;
+                font-size: .9rem;
+                font-weight: 300;
             }
 
             .btn {
@@ -163,7 +172,89 @@
                     background-color: #FC3657;
                 }
             }
+
+            .card-price {
+                font-weight: 900;
+                font-size: 1.3rem;
+                padding-right: .4rem;
+            }
         }
     }
 
+    .ver-mas {
+        margin: 5em 0 1em 0;
+        text-decoration: underline;
+        color: #272727;
+    }
+
+}
+
+.clases-privadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 5rem 7em 5rem;
+
+    h2 {
+        font-weight: 900;
+        margin: 0 0 2em 0;
+        font-size: 2rem;
+    }
+
+    .clases-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 7rem;
+
+
+        .clases-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 0 0 6rem;
+
+            p {
+                margin: 2em 2rem 2em 0;
+                font-weight: 400;
+                font-size: .9rem;
+            }
+
+            li {
+                font-size: .9rem;
+                font-weight: 300;
+                padding: .6em 0;
+
+                i {
+                    color: #FF637D;
+                    font-size: 1.1rem;
+                    padding-right: .8rem;
+                }
+            }
+
+            .reservar-btn {
+                width: 13rem;
+                background-color: #FBC72E;
+                color: #272727;
+                font-size: .9rem;
+                font-weight: 600;
+                letter-spacing: .02rem;
+                padding: .6em 1rem;
+                border: none;
+                border-radius: 5px;
+                text-transform: uppercase;
+                margin: 3em 0;
+
+                &:hover {
+                    background-color: #FFDC73;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #FF637D;
+    height: 30vh;
+    width: 100vw;
 }

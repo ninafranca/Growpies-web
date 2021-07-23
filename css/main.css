@@ -172,7 +172,7 @@ header .buscador button:hover {
   justify-content: center;
 }
 .recomendados h2 {
-  font-weight: 700;
+  font-weight: 900;
   margin: 2.5em 0 2em 0;
 }
 .recomendados .carrusel-cards {
@@ -181,12 +181,9 @@ header .buscador button:hover {
   align-items: center;
   margin: 0 4rem;
 }
-.recomendados .carrusel-cards .arrow {
-  background-color: #272727;
-  color: #FFFFFF;
-  border-radius: 50%;
-  padding: 0.15rem 0.3rem;
-  font-size: 0.7rem;
+.recomendados .carrusel-cards .arrow i {
+  color: #272727;
+  font-size: 1.3rem;
   margin: 0 0.3rem;
 }
 .recomendados .contenedor-cards {
@@ -196,9 +193,6 @@ header .buscador button:hover {
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-}
-.recomendados .contenedor-cards .arrow {
-  align-self: center;
 }
 .recomendados .contenedor-cards .card {
   width: 28rem;
@@ -216,9 +210,12 @@ header .buscador button:hover {
 }
 .recomendados .contenedor-cards .card .card-title {
   font-weight: 800 !important;
+  font-size: 1.1rem;
 }
 .recomendados .contenedor-cards .card .card-text {
-  padding: 0.1em 0 1em 0;
+  padding: 0.5em 0 1.8em 0;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 .recomendados .contenedor-cards .card .btn {
   background-color: #FF637D;
@@ -230,12 +227,21 @@ header .buscador button:hover {
 .recomendados .contenedor-cards .card .btn:hover {
   background-color: #FC3657;
 }
+.recomendados .contenedor-cards .card .card-price {
+  font-weight: 900;
+  font-size: 1.3rem;
+  padding-right: 0.4rem;
+}
 
 .videos {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3em 0 5em 0;
+}
+.videos h2 {
+  font-weight: 900;
+  margin: 2.5em 0 2em 0;
 }
 .videos .filters-container {
   display: flex;
@@ -272,9 +278,12 @@ header .buscador button:hover {
 }
 .videos .contenedor-videos .card .card-title {
   font-weight: 800 !important;
+  font-size: 1.1rem;
 }
 .videos .contenedor-videos .card .card-text {
-  padding: 0.1em 0 1em 0;
+  padding: 0.5em 0 1.8em 0;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 .videos .contenedor-videos .card .btn {
   background-color: #FF637D;
@@ -285,6 +294,77 @@ header .buscador button:hover {
 }
 .videos .contenedor-videos .card .btn:hover {
   background-color: #FC3657;
+}
+.videos .contenedor-videos .card .card-price {
+  font-weight: 900;
+  font-size: 1.3rem;
+  padding-right: 0.4rem;
+}
+.videos .ver-mas {
+  margin: 5em 0 1em 0;
+  text-decoration: underline;
+  color: #272727;
+}
+
+.clases-privadas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 5rem 7em 5rem;
+}
+.clases-privadas h2 {
+  font-weight: 900;
+  margin: 0 0 2em 0;
+  font-size: 2rem;
+}
+.clases-privadas .clases-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 7rem;
+}
+.clases-privadas .clases-container .clases-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 6rem;
+}
+.clases-privadas .clases-container .clases-text p {
+  margin: 2em 2rem 2em 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.clases-privadas .clases-container .clases-text li {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0.6em 0;
+}
+.clases-privadas .clases-container .clases-text li i {
+  color: #FF637D;
+  font-size: 1.1rem;
+  padding-right: 0.8rem;
+}
+.clases-privadas .clases-container .clases-text .reservar-btn {
+  width: 13rem;
+  background-color: #FBC72E;
+  color: #272727;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+  padding: 0.6em 1rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 3em 0;
+}
+.clases-privadas .clases-container .clases-text .reservar-btn:hover {
+  background-color: #FFDC73;
+}
+
+footer {
+  background-color: #FF637D;
+  height: 30vh;
+  width: 100vw;
 }
 
 * {
