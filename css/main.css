@@ -1,74 +1,176 @@
-main .background {
-  background-image: url("/assets/back1.png");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-start;
-  padding: 8% 0% 0% 4%; }
-  main .background .card {
-    border-radius: 2rem;
-    width: 37vw;
-    height: 58vh;
-    opacity: 0.7; }
-    main .background .card h1 {
-      padding: 5% 4% 0% 4%;
-      color: #272727;
-      font-weight: 900;
-      font-size: 210%; }
-    main .background .card p {
-      padding: 5% 4% 0% 4%;
-      color: #272727;
-      font-size: 120%; }
-    main .background .card .back-botones {
-      padding: 7% 0% 0% 4%; }
-      main .background .card .back-botones .boton-cursos {
-        color: white;
-        border-color: #FF637D;
-        background-color: #FF637D;
-        width: 11vw;
-        height: 7.5vh;
-        font-size: 130%;
-        font-family: Arial, Helvetica, sans-serif; }
-        main .background .card .back-botones .boton-cursos:hover {
-          border-color: #FC3657;
-          background-color: #FC3657; }
-      main .background .card .back-botones .boton-conocenos {
-        color: #FF637D;
-        border-color: #FF637D;
-        background-color: white;
-        width: 11vw;
-        height: 7.5vh;
-        font-size: 130%;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0% 7%; }
-        main .background .card .back-botones .boton-conocenos:hover {
-          border-color: #FC3657;
-          color: #FC3657; }
-
-main .iconos-redondos {
-  padding-top: 2%; }
-  main .iconos-redondos h2 {
-    text-align: center;
-    font-weight: bold; }
-  main .iconos-redondos_body {
-    padding-top: 2%;
+main {
+  color: #272727; }
+  main .background {
+    background-image: url("/assets/back1.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    main .iconos-redondos_body_elemento {
+    justify-content: flex-start;
+    padding: 8% 0% 0% 4%; }
+    main .background .card {
+      border-radius: 2rem;
+      width: 37vw;
+      height: 58vh;
+      opacity: 0.7; }
+      main .background .card h1 {
+        padding: 5% 4% 0% 4%;
+        font-weight: 900;
+        font-size: 210%; }
+      main .background .card p {
+        padding: 5% 4% 0% 4%;
+        font-size: 120%; }
+      main .background .card .back-botones {
+        padding: 7% 0% 0% 4%; }
+        main .background .card .back-botones .boton-cursos {
+          color: white;
+          border-color: #FF637D;
+          background-color: #FF637D;
+          width: 11vw;
+          height: 7.5vh;
+          font-size: 130%;
+          font-family: Arial, Helvetica, sans-serif; }
+          main .background .card .back-botones .boton-cursos:hover {
+            border-color: #FC3657;
+            background-color: #FC3657; }
+        main .background .card .back-botones .boton-conocenos {
+          color: #FF637D;
+          border-color: #FF637D;
+          background-color: white;
+          width: 11vw;
+          height: 7.5vh;
+          font-size: 130%;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0% 7%; }
+          main .background .card .back-botones .boton-conocenos:hover {
+            border-color: #FC3657;
+            color: #FC3657; }
+  main .iconos-redondos {
+    padding-top: 5%; }
+    main .iconos-redondos h2 {
+      text-align: center;
+      font-weight: bold;
+      font-weight: 900; }
+    main .iconos-redondos_body {
+      padding-top: 3%;
       display: flex;
       justify-content: center;
+      align-items: center; }
+      main .iconos-redondos_body_elemento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 25vw;
+        padding: 0% 2%; }
+        main .iconos-redondos_body_elemento h3 {
+          font-size: 130%;
+          padding: 8% 0%; }
+        main .iconos-redondos_body_elemento img {
+          height: 20vh; }
+  main .index-secciones {
+    padding-top: 5%; }
+    main .index-secciones h2 {
+      text-align: center;
+      font-weight: bold;
+      font-weight: 900; }
+    main .index-secciones_cards {
+      padding-top: 3%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .index-secciones_cards a {
+        color: #272727;
+        margin: 0% 2.5%;
+        display: flex;
+        align-items: center; }
+        main .index-secciones_cards a img {
+          height: 30vh; }
+        main .index-secciones_cards a h3 {
+          font-size: 150%;
+          text-align: center;
+          padding: 5% 0%; }
+  main .reservar-clase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 25% 0% 25%; }
+    main .reservar-clase h2 {
+      text-align: center;
+      font-weight: 900; }
+    main .reservar-clase p {
+      padding-top: 4%;
+      text-align: center; }
+    main .reservar-clase a {
+      padding-top: 4%;
+      font-weight: 600; }
+      main .reservar-clase a button {
+        width: 15vw;
+        height: 7vh;
+        border-color: #FFDC73;
+        background-color: #FFDC73; }
+        main .reservar-clase a button:hover {
+          border-color: #FBC72E;
+          background-color: #FBC72E; }
+  main .consulta-titulo {
+    padding-top: 5%;
+    text-align: center;
+    font-weight: 900; }
+  main .mapa {
+    padding-top: 14%;
+    z-index: 1;
+    position: relative; }
+    main .mapa iframe {
+      width: 100%; }
+    main .mapa .consulta {
+      bottom: 50%;
+      left: 50%;
+      right: 50%;
+      position: absolute;
+      padding-top: 5%;
+      display: flex;
       align-items: center;
+      justify-content: center;
       flex-direction: column;
-      width: 25vw;
-      padding: 0% 2%; }
-      main .iconos-redondos_body_elemento h3 {
-        font-size: 130%;
-        padding: 8% 0%; }
-      main .iconos-redondos_body_elemento img {
-        height: 20vh; }
+      z-index: 2; }
+      main .mapa .consulta .card {
+        width: 23vw;
+        height: 55vh; }
+        main .mapa .consulta .card-body {
+          padding: 4%;
+          flex-direction: column; }
+          main .mapa .consulta .card-body h3 {
+            padding: 5% 0%;
+            text-align: center; }
+          main .mapa .consulta .card-body .input-nombre, main .mapa .consulta .card-body .input-email {
+            display: flex;
+            flex-direction: column;
+            padding: 4%; }
+            main .mapa .consulta .card-body .input-nombre input, main .mapa .consulta .card-body .input-email input {
+              width: 100%;
+              height: 5vh;
+              border-color: #cecbcb; }
+          main .mapa .consulta .card-body .checkbox {
+            padding-top: 2%; }
+          main .mapa .consulta .card-body .botones {
+            padding: 7% 0% 3% 3%; }
+            main .mapa .consulta .card-body .botones button {
+              width: 40%; }
+              main .mapa .consulta .card-body .botones button:nth-child(1) {
+                border-color: #FFDC73;
+                background-color: #FFDC73; }
+                main .mapa .consulta .card-body .botones button:nth-child(1):hover {
+                  border-color: #FBC72E;
+                  background-color: #FBC72E; }
+              main .mapa .consulta .card-body .botones button:nth-child(2) {
+                margin-left: 5%;
+                border-color: #FF637D;
+                color: #FF637D; }
+                main .mapa .consulta .card-body .botones button:nth-child(2):hover {
+                  color: #FC3657;
+                  border-color: #FC3657; }
 
 header {
   display: flex;
@@ -103,6 +205,7 @@ header {
     margin-right: -7%;
     display: flex; }
     header .buscador input {
+      border-color: lightgray;
       align-self: baseline;
       height: 0.5%;
       width: 20vw;
@@ -117,6 +220,42 @@ header {
       header .buscador button:hover {
         border-color: #FC3657;
         color: #FC3657; }
+
+footer {
+  display: flex;
+  flex-direction: column; }
+  footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  footer .footer-logo {
+    padding: 0% 0% 2% 5%; }
+    footer .footer-logo img {
+      height: 20vh; }
+  footer .footer-info {
+    text-align: center;
+    padding-right: 3%; }
+    footer .footer-info p {
+      padding-top: 1%; }
+    footer .footer-info div {
+      padding-bottom: 4%; }
+    footer .footer-info a {
+      padding-bottom: 6%;
+      color: black; }
+  footer .footer-redes {
+    padding-right: 5%; }
+    footer .footer-redes img {
+      height: 5vh; }
+    footer .footer-redes div {
+      display: flex;
+      align-items: flex-end; }
+      footer .footer-redes div:nth-child(2) {
+        padding: 7% 0%; }
+      footer .footer-redes div a {
+        padding-right: 10%; }
+  footer .copyright {
+    text-align: center;
+    padding-bottom: 2%; }
 
 * {
   font-family: "Nunito", sans-serif; }

@@ -1,0 +1,50 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-logo {
+        padding: 0% 0% 2% 5%;
+        img {
+            height: 20vh;
+        }
+    }
+    .footer-info {
+        text-align: center;
+        padding-right: 3%;
+        p {
+            padding-top: 1%;
+        }
+        div {
+            padding-bottom: 4%;
+        }
+        a {
+            padding-bottom: 6%;
+            color: black;
+        }
+    }
+    .footer-redes {
+        padding-right: 5%;
+        img {
+            height: 5vh;
+        }
+        div {
+            display: flex;
+            align-items: flex-end;
+            &:nth-child(2) {
+                padding: 7% 0%;
+            }
+            a {
+                padding-right: 10%;
+            }
+        }
+        
+    }
+    .copyright {
+        text-align: center;
+        padding-bottom: 2%;
+    }
+}
