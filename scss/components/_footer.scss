@@ -9,7 +9,8 @@ footer {
     .footer-logo {
         padding: 0% 0% 2% 5%;
         img {
-            height: 20vh;
+            padding-top: 10%;
+            height: 23vh;
         }
     }
     .footer-info {
@@ -28,14 +29,26 @@ footer {
     }
     .footer-redes {
         padding-right: 5%;
-        img {
-            height: 5vh;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         div {
+            padding-top: 15%;
             display: flex;
             align-items: flex-end;
+            &:nth-child(1) {
+                a {
+                    padding-left: 4%;
+                    img {
+                        height: 4vh;
+                    }
+                }
+            }
             &:nth-child(2) {
                 padding: 7% 0%;
+                img {
+                    height: 5.5vh;
+                }
             }
             a {
                 padding-right: 10%;

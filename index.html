@@ -31,50 +31,52 @@
             <a href="./html/nosotros.html">Nosotros</a>
         </nav>
         <div class="buscador">
-            <input type="text" name="nombre" id="nombre" class="p-3 rounded" placeholder="Búsqueda">
+            <input type="text" name="nombre" id="nombre" class="p-3 rounded form-control" placeholder="Búsqueda">
             <button class="btn btn-light">Buscar</button>
         </div>
         <a href="index.html" class="a-cart">
-            <img src="/assets/cart-icon.png" alt="Icono cart" class="icono-cart">
+            <img src="/assets/cart.png" alt="Icono cart" class="icono-cart">
         </a>
     </header>
 
     <main>
 
         <div class="background">
-            <div class="card">
+            <div class="card card-fondo"></div>
+            <div class="card card-texto">
                 <h1>Descubre el aprendizaje continuo <br>para padres y profesores</br></h1>
                 <p>Somos la plataforma donde descubrir profesionales, micro-cursos y herramientas que capaciten a padres o profesores permitiéndoles implicarse en el desarrollo integral de los niños con necesidadeseducativas especiales.</p>
                 <div class="back-botones">
-                    <button class="btn boton-cursos">Ver cursos</button>
                     <button class="btn boton-conocenos">Conócenos</button>
+                    <button class="btn boton-cursos">Ver cursos</button>
                 </div>
             </div>
         </div>
 
         <div class="iconos-redondos">
-            <h2>Título</h2>
+            <h2>¿Qué encontrarás en Growpies?</h2>
             <div class="iconos-redondos_body">
                 <div class="iconos-redondos_body_elemento">
                     <img src="./assets/round-icon.png" alt="Icono">
-                    <h3>Elemento 1</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corporis, quo maiores in error veritatis iste fuga culpa saepe.</p>
+                    <h3>Cursos online</h3>
+                    <p>Obtendrás conocimientos nuevos, junto con estrategias y recursos prácticos que podrás utilizar desde el primer minuto. Los cursos en línea te permitirán organizar tu tiempo de dedicación.</p>
                 </div>
                 <div class="iconos-redondos_body_elemento">
                     <img src="./assets/round-icon.png" alt="Icono">
-                    <h3>Elemento 2</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corporis, quo maiores in error veritatis iste fuga culpa saepe.</p>
+                    <h3>Recursos gratuitos</h3>
+                    <p>Desde la plataforma tendrás acceso a recursos audiovisuales y materiales descargables para incluir en la rutina diaria.</p>
                 </div>
                 <div class="iconos-redondos_body_elemento">
                     <img src="./assets/round-icon.png" alt="Icono">
-                    <h3>Elemento 3</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corporis, quo maiores in error veritatis iste fuga culpa saepe.</p>
+                    <h3>Red profesional</h3>
+                    <p>Cada curso es creado e impartido por profesionales con amplia formación y trayectoria. Si eres profesional especializado, te invitamos a sumar tu experiencia a Growpies Academy.</p>
                 </div>
             </div>
         </div>
 
         <div class="index-secciones">
-            <h2>Título</h2>
+            <h2>Seguimiento individualizado</h2>
+            <p>Podrás estar en contacto con el docente o instructor para resolver inquietudes relacionadas al <br>contenido del curso. También podrás exponer tu experiencia y opinión con el grupo en la sección de <br>foro/comentarios de cada bloque. ¡Entre todos enriquecemos la experiencia!</p>
             <div class="index-secciones_cards">
                 <a href="">
                     <div class="index-secciones_card card">
@@ -98,35 +100,32 @@
         </div>
 
         <div class="reservar-clase">
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium exercitationem saepe optio possimus facere, eveniet praesentium repudiandae soluta sit pariatur vitae laborum voluptate mollitia consequatur! Suscipit ducimus pariatur veritatis amet commodi atque esse sequi error illum quod perferendis, doloremque quas numquam praesentium similique deleniti vel magnam ut quisquam quia nemo?</p>
             <a href="">
-                <button class="btn">RESERVAR UNA CLASE</button>
+                <button class="btn">COMPRAR UN CURSO</button>
             </a>
+            <h2 class="consulta-titulo">Completa el siguiente formulario <br>para ponerte en contacto</h2>
         </div>
 
-        <h2 class="consulta-titulo">Título</h2>
         <div class="mapa">
             <div class="consulta">
-                    <div class="card">
+                <div class="card">
                     <div class="card-body">
                         <h3>Déjanos tu consulta</h3>
                         <div class="card-inputs">
                             <div class="input-nombre container">
                                 <label for="nombre">Nombre y apellido</label>
-                                <input type="text" name="nombre" class="rounded" placeholder="Juan Pérez">
+                                <input type="text" name="nombre" class="rounded form-control" placeholder="Juan Pérez">
                             </div>
                             <div class="input-email container">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" id="mail" class="rounded" placeholder="juanperez@gmail.com">
+                                <input type="email" name="email" id="mail" class="rounded form-control" placeholder="juanperez@gmail.com">
                             </div>
-                            <div class="checkbox container">
-                                <input type="checkbox" class="form-check-input" name="check" id="check" value="check">
-                                <label for="check">Texto de checkbox</label>
+                            <div class="mensaje container">
+                                <input type="text" class="rounded form-control" placeholder="Escribe aquí tu mensaje">
                             </div>
                             <div class="botones container">
-                                <button class="btn">ENVIAR</button>
                                 <button class="btn" type="reset">CANCELAR</button>
+                                <button class="btn">ENVIAR</button>
                             </div>
                         </div>
                     </div>
@@ -152,12 +151,8 @@
             </div>
             <div class="footer-redes">
                 <div>
-                    <a href=""><img src="./assets/ig.png" alt="Logo Ig"></a>
+                    <a href="" class="ig"><img src="./assets/ig.png" alt="Logo Ig"></a>
                     <p>Instagram</p>
-                </div>
-                <div>
-                    <a href=""><img src="./assets/facebook.png" alt=""></a>
-                    <p>facebook</p>
                 </div>
                 <div>
                     <a href=""><img src="./assets/linkedin.png" alt="Logo Linkedin"></a>

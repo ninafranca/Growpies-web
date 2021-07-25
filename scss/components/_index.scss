@@ -1,5 +1,6 @@
 main {
     color: $color-negro;
+    background: linear-gradient(176deg, rgba(255,255,255,1) 0%, rgba(234,242,227,1) 100%);
 
     .background {
         background-image: url("/assets/back1.png");
@@ -10,11 +11,20 @@ main {
         display: flex;
         justify-content: flex-start;
         padding: 8% 0% 0% 4%;
-        .card {
+        .card-fondo {
+            position: relative;
             border-radius: 2rem;
             width: 37vw;
             height: 58vh;
             opacity: 0.7;
+        }
+        .card-texto {
+            position: absolute;
+            left: 4%;
+            background: none;
+            border-radius: 2rem;
+            width: 37vw;
+            height: 58vh;
             h1 {
                 padding: 5% 4% 0% 4%;
                 font-weight: 900;
@@ -25,7 +35,8 @@ main {
                 font-size: 120%;
             }
             .back-botones {
-                padding: 7% 0% 0% 4%;
+                padding-top: 7%;
+                margin-left: -3%;
                 .boton-cursos {
                     color: white;
                     border-color: $color-rojo-claro;
@@ -52,30 +63,32 @@ main {
     }
 
     .iconos-redondos {
-        padding-top: 5%;
+        padding-top: 3%;
         h2 {
             text-align: center;
             font-weight: bold;
             font-weight: 900;
         }
         &_body {
-            padding-top: 3%;
+            padding-top: 5%;
             display: flex;
             justify-content: center;
-            align-items: center;
             &_elemento {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
-                width: 25vw;
-                padding: 0% 2%;
+                width: 26vw;
+                padding: 0% 2.5%;
                 h3 {
-                    font-size: 130%;
+                    font-size: 170%;
                     padding: 8% 0%;
                 }
                 img {
                     height: 20vh
+                }
+                p {
+                    padding-left: 5%;
                 }
             }
         }
@@ -88,6 +101,10 @@ main {
             font-weight: bold;
             font-weight: 900;
         }
+        p {
+            text-align: center;
+            padding: 4% 0% 1% 0%;
+        }
         &_cards {
             padding-top: 3%;
             display: flex;
@@ -98,6 +115,20 @@ main {
                 margin: 0% 2.5%;
                 display: flex;
                 align-items: center;
+                &:hover {
+                    animation-name: cards_seccion;
+                    animation-iteration-count: 1;
+                    animation-timing-function: ease-in-out;
+                    animation-duration: 0.2s;
+                    animation-delay: 0s;
+                    animation-fill-mode:forwards
+                }
+                div {
+                    -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+                    border-radius: 0.4rem;
+                    overflow: hidden;
+                    border-color: #E0E0E0;
+                }
                 img {
                     height: 30vh;
                 }
@@ -115,15 +146,7 @@ main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 5% 25% 0% 25%;
-        h2 {
-            text-align: center;
-            font-weight: 900;
-        }
-        p {
-            padding-top: 4%;
-            text-align: center;
-        }
+        padding: 4% 25% 15% 25%;
         a {
             padding-top: 4%;
             font-weight: 600;
@@ -138,23 +161,22 @@ main {
                 }
             }
         }
-    }
-
-    .consulta-titulo {
-        padding-top: 5%;
-        text-align: center;
-        font-weight: 900;
+        .consulta-titulo {
+            padding: 10% 0% 5% 0%;
+            text-align: center;
+            font-weight: 900;
+        }
     }
 
     .mapa {
-        padding-top: 14%;
+        padding-top: 12%;
         z-index: 1;
         position: relative;
         iframe {
             width: 100%;
         }
         .consulta {
-            bottom: 50%;
+            bottom: 62%;
             left: 50%;
             right: 50%;
             position: absolute;
@@ -164,31 +186,48 @@ main {
             justify-content: center;
             flex-direction: column;
             z-index: 2;
+            border-color: none;
             .card {
+                box-shadow: #E0E0E0;
+                -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
                 width: 23vw;
-                height: 55vh;
+                height: 70vh;
+                border-radius: 0.8rem;
+                border-color: #ffffff;
                 &-body {
                     padding: 4%;
                     flex-direction: column;
                     h3 {
-                        padding: 5% 0%;
+                        padding: 4% 0% 4% 0%;
                         text-align: center;
                     }
                     .input-nombre, .input-email {
                         display: flex;
                         flex-direction: column;
-                        padding: 4%;
+                        padding: 2% 2% 2% 2%;
                         input {
+                            margin: 2% 0%;
                             width: 100%;
                             height: 5vh;
                             border-color: rgb(206, 203, 203);
                         }
                     }
-                    .checkbox {
-                        padding-top: 2%;
+                    .mensaje {
+                        padding: 4% 2%;
+                        input {
+                            width: 100%;
+                            height: 20vh;
+                            border-color: rgb(206, 203, 203);
+                            &[type="text"]::placeholder {
+                                text-align: start;
+                                margin-top: -10%;
+                            }
+                        }
                     }
                     .botones {
-                        padding: 7% 0% 3% 3%;
+                        padding: 5% 0% 3% 3%;
+                        display: flex;
+                        justify-content: center;
                         button {
                             width: 40%;
                             &:nth-child(1) {
@@ -214,4 +253,12 @@ main {
             }
         }
     }
+}
+
+@keyframes cards_seccion {
+    0% { transform: translateY(-2px); }
+    25% { transform: translateY(-4px); }
+    50% { transform: translateY(-6px); }
+    75% { transform: translateY(-8px); }
+    100% { transform: translateY(-10px); }
 }
