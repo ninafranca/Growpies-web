@@ -1,6 +1,7 @@
 main {
-  color: #272727;
-  background: linear-gradient(176deg, white 0%, #eaf2e3 100%); }
+  color: #272727; }
+  main .main-index {
+    background: linear-gradient(176deg, white 0%, #eaf2e3 100%); }
   main .background {
     background-image: url("/assets/back1.png");
     height: 100vh;
@@ -20,18 +21,18 @@ main {
       position: absolute;
       left: 4%;
       background: none;
-      border-radius: 2rem;
+      border-color: none;
       width: 37vw;
       height: 58vh; }
       main .background .card-texto h1 {
-        padding: 5% 4% 0% 4%;
+        padding: 5% 4% 2% 4%;
         font-weight: 900;
-        font-size: 210%; }
+        font-size: 190%; }
       main .background .card-texto p {
         padding: 5% 4% 0% 4%;
-        font-size: 120%; }
+        font-size: 125%; }
       main .background .card-texto .back-botones {
-        padding-top: 7%;
+        padding-top: 5%;
         margin-left: -3%; }
         main .background .card-texto .back-botones .boton-cursos {
           color: white;
@@ -40,7 +41,8 @@ main {
           width: 11vw;
           height: 7.5vh;
           font-size: 130%;
-          font-family: Arial, Helvetica, sans-serif; }
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 400; }
           main .background .card-texto .back-botones .boton-cursos:hover {
             border-color: #FC3657;
             background-color: #FC3657; }
@@ -52,6 +54,7 @@ main {
           height: 7.5vh;
           font-size: 130%;
           font-family: Arial, Helvetica, sans-serif;
+          font-weight: 400;
           margin: 0% 7%; }
           main .background .card-texto .back-botones .boton-conocenos:hover {
             border-color: #FC3657;
@@ -130,7 +133,8 @@ main {
         width: 15vw;
         height: 7vh;
         border-color: #FFDC73;
-        background-color: #FFDC73; }
+        background-color: #FFDC73;
+        font-weight: 700; }
         main .reservar-clase a button:hover {
           border-color: #FBC72E;
           background-color: #FBC72E; }
@@ -195,14 +199,16 @@ main {
               width: 40%; }
               main .mapa .consulta .card-body .botones button:nth-child(1) {
                 border-color: #FFDC73;
-                background-color: #FFDC73; }
+                background-color: #FFDC73;
+                font-weight: 700; }
                 main .mapa .consulta .card-body .botones button:nth-child(1):hover {
                   border-color: #FBC72E;
                   background-color: #FBC72E; }
               main .mapa .consulta .card-body .botones button:nth-child(2) {
                 margin-left: 5%;
                 border-color: #FF637D;
-                color: #FF637D; }
+                color: #FF637D;
+                font-weight: 700; }
                 main .mapa .consulta .card-body .botones button:nth-child(2):hover {
                   color: #FC3657;
                   border-color: #FC3657; }
@@ -236,7 +242,7 @@ header {
         color: #272727;
         text-decoration-color: #FF637D;
         text-decoration-thickness: 15%;
-        font-weight: 900; }
+        font-weight: 700; }
   header .a-logo {
     margin-left: -6%;
     padding-top: 0.7%; }
@@ -312,6 +318,117 @@ footer {
   footer .copyright {
     text-align: center;
     padding-bottom: 2%; }
+
+.nosotros .banner {
+  background-image: url(../../assets/banner-nos.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+  .nosotros .banner h1 {
+    font-weight: 900;
+    color: #FF637D;
+    margin: 4em 0 1em 0; }
+  .nosotros .banner p {
+    font-weight: 300;
+    color: #FFFFFF; }
+
+.nosotros .quienes-somos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%; }
+  .nosotros .quienes-somos h2 {
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 4%;
+    font-size: 190%; }
+  .nosotros .quienes-somos_div {
+    display: flex;
+    justify-content: space-evenly; }
+    .nosotros .quienes-somos_div img {
+      height: 30vh;
+      margin: 3% 0% 0% 5%; }
+    .nosotros .quienes-somos_div_p {
+      padding-left: 12%;
+      width: 50%; }
+      .nosotros .quienes-somos_div_p p:nth-child(2) {
+        padding-top: 2%; }
+
+.nosotros .growpies-academy {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%; }
+  .nosotros .growpies-academy h2 {
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 4%;
+    font-size: 190%; }
+  .nosotros .growpies-academy_div {
+    display: flex;
+    justify-content: space-evenly; }
+    .nosotros .growpies-academy_div img {
+      height: 49vh; }
+    .nosotros .growpies-academy_div_p {
+      width: 40%; }
+      .nosotros .growpies-academy_div_p p:nth-child(2) {
+        padding-top: 2%; }
+
+.nosotros .integrantes {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%; }
+  .nosotros .integrantes h2 {
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 4%;
+    font-size: 190%; }
+  .nosotros .integrantes_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .nosotros .integrantes_div_integrante {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 20%; }
+      .nosotros .integrantes_div_integrante h3 {
+        font-size: 150%;
+        font-weight: 800;
+        text-align: center;
+        padding: 7% 0%; }
+      .nosotros .integrantes_div_integrante img {
+        height: 41vh; }
+      .nosotros .integrantes_div_integrante p {
+        padding: 1% 5%; }
+
+.nosotros .boton-cursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  .nosotros .boton-cursos h2 {
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 4%;
+    font-size: 190%; }
+  .nosotros .boton-cursos p {
+    text-align: center;
+    width: 50%;
+    margin-top: -1%;
+    padding-bottom: 3%; }
+  .nosotros .boton-cursos button {
+    border-color: #FFDC73;
+    background-color: #FFDC73;
+    font-weight: 700; }
+    .nosotros .boton-cursos button:hover {
+      border-color: #FBC72E;
+      background-color: #FBC72E; }
 
 * {
   font-family: "Nunito", sans-serif; }
