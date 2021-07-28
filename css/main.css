@@ -110,6 +110,7 @@ main {
           animation-delay: 0s;
           animation-fill-mode: forwards; }
         main .index-secciones_cards a div {
+          box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
           -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
           border-radius: 0.4rem;
           overflow: hidden;
@@ -400,8 +401,6 @@ footer {
         font-weight: 800;
         text-align: center;
         padding: 7% 0%; }
-      .nosotros .integrantes_div_integrante img {
-        height: 41vh; }
       .nosotros .integrantes_div_integrante p {
         padding: 1% 5%; }
 

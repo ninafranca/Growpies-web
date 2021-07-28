@@ -127,6 +127,7 @@ main {
                     animation-fill-mode:forwards
                 }
                 div {
+                    box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
                     -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
                     border-radius: 0.4rem;
                     overflow: hidden;
