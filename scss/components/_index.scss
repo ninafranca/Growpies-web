@@ -1,6 +1,9 @@
 main {
     color: $color-negro;
-    position: relative;
+    
+    .main-index {
+        background: linear-gradient(176deg, rgba(255,255,255,1) 0%, rgba(234,242,227,1) 100%);
+    }
 
     .background {
         background-image: url("/assets/fondo-index.jpg");
@@ -18,16 +21,17 @@ main {
             position: absolute;
             left: 4%;
             background: none;
-            width: 33vw;
+            border-color: none;
+            width: 37vw;
             height: 58vh;
             color: white;
             h1 {
                 padding: 5% 4% 2% 4%;
                 font-weight: 900;
-                font-size: 280%;
+                font-size: 190%;
             }
             p {
-                padding: 5% 4% 3% 4%;
+                padding: 5% 4% 0% 4%;
                 font-size: 125%;
             }
             .back-botones {
@@ -136,34 +140,11 @@ main {
                     padding: 0% 2%;
                 }
                 div {
-                    padding: 0% 2%;
-                    h3 {
-                        text-align: start;
-                        font-weight: 900;
-                        font-size: 150%;
-                        padding: 5% 0%;
-                    }
-                    p {
-                        padding-top: 5%;
-                        text-align: start;
-                        width: 40vw;
-                    }
-                    .manos-secciones {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        margin-left: -3%;
-                        img {
-                            height: 5vh;
-                            padding-right: 15%;
-                        }
-                    }
-                }
-            }
-            .cursos {
-                h3 {
-                    @include underline-izq-a-der;
-                    background-image: linear-gradient($color-amarillo, $color-amarillo) !important;
+                    box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+                    -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+                    border-radius: 0.4rem;
+                    overflow: hidden;
+                    border-color: #E0E0E0;
                 }
             }
             .recursos {

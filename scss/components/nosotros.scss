@@ -1,14 +1,22 @@
 .nosotros {
 
     .banner {
+<<<<<<< HEAD
         background-image: url(../../assets/nosotros.png);
         background-size: cover;
         background-position: center;
         width: 100%;
+=======
+        background-image: url(../../assets/banner-nos.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
         height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: start;
+<<<<<<< HEAD
         align-items: flex-start;
         padding-left: 7%;  
         h1 {
@@ -19,6 +27,15 @@
         }
         p {
             font-size: 125%;
+=======
+        align-items: center;    
+        h1 {
+            font-weight: 900;
+            color: #FF637D;
+            margin: 4em 0 1em 0;
+        }
+        p {
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
             font-weight: 300;
             color: #FFFFFF;
         }
@@ -29,9 +46,13 @@
         flex-direction: column;
         padding-top: 5%;
         h2 {
+<<<<<<< HEAD
             @include h2;
             color: black;
             font-size: 200%;
+=======
+            @include h2
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
         }
         &_div {
             display: flex;
@@ -58,14 +79,21 @@
         padding-top: 8%;
         h2 {
             @include h2;
+<<<<<<< HEAD
             font-size: 160%;
             color: black;
+=======
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
         }
         &_div {
             display: flex;
             justify-content: space-evenly;
             img {
+<<<<<<< HEAD
                 width: 35vw;
+=======
+                height: 49vh;
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
             }
             &_p {
                 width: 40%;
@@ -83,22 +111,38 @@
         display: flex;
         flex-direction: column;
         padding-top: 8%;
+<<<<<<< HEAD
         padding-bottom: 5%;
         h2 {
             @include h2;
             color: black;
             font-size: 160%;
 
+=======
+        h2 {
+            text-align: center;
+            font-weight: 900;
+            padding-bottom: 4%;
+            font-size: 190%;
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
         }
         &_div {
             display: flex;
             justify-content: space-evenly;
+<<<<<<< HEAD
             align-items: flex-start;
+=======
+            align-items: center;
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
             &_integrante {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+<<<<<<< HEAD
                 width: 25%;
+=======
+                width: 20%;
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
                 h3 {
                     font-size: 150%;
                     font-weight: 800;
@@ -106,7 +150,10 @@
                     padding: 7% 0%;
                 }
                 img {
+<<<<<<< HEAD
                     width: 25vw;
+=======
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
                 }
                 p {
                     padding: 1% 5%;
@@ -116,7 +163,10 @@
     }
 
     .boton-cursos {
+<<<<<<< HEAD
         background-color: $color-celeste;
+=======
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -125,13 +175,17 @@
         padding-bottom: 5%;
         h2 {
             @include h2;
+<<<<<<< HEAD
             color: black;
             font-size: 160%;
+=======
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
         }
         p {
             text-align: center;
             width: 50%;
             margin-top: -1%;
+<<<<<<< HEAD
             padding-bottom: 5%;
         }
         .carousel {
@@ -164,6 +218,14 @@
             background-color: $color-amarillo-claro;
             font-weight: 700;
             margin-top: 5%;
+=======
+            padding-bottom: 3%;
+        }
+        button {
+            border-color: $color-amarillo-claro;
+            background-color: $color-amarillo-claro;
+            font-weight: 700;
+>>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
             &:hover {
                 border-color: $color-amarillo;
                 background-color: $color-amarillo;
