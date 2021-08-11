@@ -1,0 +1,174 @@
+.nosotros {
+
+    .banner {
+        background-image: url(../../assets/nosotros.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding-left: 7%;  
+        h1 {
+            font-size: 500%;
+            font-weight: 900;
+            color: #FF637D;
+            margin: 5% 0% 1% 0%;
+        }
+        p {
+            font-size: 125%;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+    }
+
+    .quienes-somos {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        h2 {
+            @include h2;
+            color: black;
+            font-size: 200%;
+        }
+        &_div {
+            display: flex;
+            justify-content: space-evenly;
+            img {
+                height: 30vh;
+                margin: 3% 0% 0% 5%;
+            }
+            &_p {
+                padding-left: 12%;
+                width: 50%;
+                p {
+                    &:nth-child(2) {
+                        padding-top: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    .growpies-academy {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8%;
+        h2 {
+            @include h2;
+            font-size: 160%;
+            color: black;
+        }
+        &_div {
+            display: flex;
+            justify-content: space-evenly;
+            img {
+                width: 35vw;
+            }
+            &_p {
+                width: 40%;
+                p {
+                    &:nth-child(2) {
+                        padding-top: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .integrantes {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8%;
+        padding-bottom: 5%;
+        h2 {
+            @include h2;
+            color: black;
+            font-size: 160%;
+
+        }
+        &_div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            &_integrante {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 25%;
+                h3 {
+                    font-size: 150%;
+                    font-weight: 800;
+                    text-align: center;
+                    padding: 7% 0%;
+                }
+                img {
+                    width: 25vw;
+                }
+                p {
+                    padding: 1% 5%;
+                }
+            }
+        }
+    }
+
+    .boton-cursos {
+        background-color: $color-celeste;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        h2 {
+            @include h2;
+            color: black;
+            font-size: 160%;
+        }
+        p {
+            text-align: center;
+            width: 50%;
+            margin-top: -1%;
+            padding-bottom: 5%;
+        }
+        .carousel {
+            width: 45vw;
+            height: 50vh;
+            &-inner {
+                border-radius: 1%;
+                box-shadow: 3px 8px 7px 1px rgba(0, 0, 0, 0.23);
+                .carousel-item {
+                    width: 45vw;
+                    height: 50vh;
+                    background-image: url("../../assets/opiniones.png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }       
+            }
+            img {
+                height: 1rem;
+            }
+            .prev {
+                margin-left: 3%;
+            }
+            .next {
+                margin-right: 3%;
+            }
+        }
+        .boton {
+            border-color: $color-amarillo-claro;
+            background-color: $color-amarillo-claro;
+            font-weight: 700;
+            margin-top: 5%;
+            &:hover {
+                border-color: $color-amarillo;
+                background-color: $color-amarillo;
+            }
+        }
+    }
+
+}

@@ -20,23 +20,49 @@
 <body>
 
     <header>
-        <a href="index.html" class="a-logo">
-            <img src="/assets/logo-growpies.png" alt="Logo Growpies" class="logo">
-        </a>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="./html/cursos.html">Cursos</a>
-            <a href="./html/recursos.html">Recursos</a>
-            <a href="./html/conblogtacto.html">Blog</a>
-            <a href="./html/nosotros.html">Nosotros</a>
-        </nav>
-        <div class="buscador">
-            <input type="text" name="nombre" id="nombre" class="p-3 rounded form-control" placeholder="Búsqueda">
-            <button class="btn btn-light">Buscar</button>
+
+        <!--Header desktop-->
+        <div class="menu-desktop">
+            <a href="index.html" class="a-logo">
+                <img src="/assets/logo-growpies.png" alt="Logo Growpies" class="logo">
+            </a>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="./html/cursos.html">Cursos</a>
+                <a href="./html/recursos.html">Recursos</a>
+                <a href="./html/blog.html">Blog</a>
+                <a href="./html/nosotros.html">Nosotros</a>
+            </nav>
+            <a href="index.html" class="a-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart icono-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+            </a>
         </div>
-        <a href="index.html" class="a-cart">
-            <img src="/assets/cart.png" alt="Icono cart" class="icono-cart">
-        </a>
+
+        <!--Header mobile-->
+        <div class="menu-mobile">
+            <a href="index.html" class="a-logo">
+                <img src="/assets/logo-growpies.png" alt="Logo Growpies" class="logo">
+            </a>
+            <div class="mobile-div">
+                <a href="index.html" class="a-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-cart icono-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" alt="Dropdown menu" class="bi bi-list dropdown dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a href="#">Cursos</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="#">Recursos</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="#">Blog</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="#">Nosotros</a></button></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
     <main class="main-index">
@@ -139,27 +165,42 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>Déjanos tu consulta</h3>
-                        <div class="card-inputs">
+                        <form class="card-inputs" id="form" action="https://formspree.io/f/mnqlgkll" method="POST">
                             <div class="input-nombre container">
                                 <label for="nombre">Nombre y apellido</label>
-                                <input type="text" name="nombre" class="rounded form-control" placeholder="Juan Pérez">
+                                <input id="form-nombre" type="text" name="name" class="rounded form-control" placeholder="Juan Pérez" required>
                             </div>
                             <div class="input-email container">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" id="mail" class="rounded form-control" placeholder="juanperez@gmail.com">
+                                <input id="form-email" type="email" name="_replyto" name="email" id="mail" class="rounded form-control" placeholder="juanperez@gmail.com" required>
                             </div>
                             <div class="mensaje container">
-                                <input type="text" class="rounded form-control" placeholder="Escribe aquí tu mensaje">
+                                <input id="form-text" name="message" type="text" class="rounded form-control" placeholder="Escribe aquí tu mensaje" required>
                             </div>
                             <div class="botones container">
                                 <button class="btn" type="reset">CANCELAR</button>
-                                <button class="btn">ENVIAR</button>
+                                <button class="btn form-enviar" type="submit" data-bs-toggle="modal" data-bs-target="#myModal">ENVIAR</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modal 
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>¡Tu conslta ha sido enviada con éxito!</p>
+                        <p>Nos contactaremos a la brevedad</p>
+                    </div>
+                    <div class="cerrar">
+                        <button type="button" class="btn btn-ok" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>-->
 
         <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12544617.604623122!2d-12.703639252371902!3d39.85965840992381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2zRXNwYcOxYQ!5e0!3m2!1ses-419!2sar!4v1626918346697!5m2!1ses-419!2sar" width="1497" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
