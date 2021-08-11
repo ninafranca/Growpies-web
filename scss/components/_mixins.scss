@@ -1,6 +1,31 @@
 @mixin botones-index {
-    width: 11vw;
-    height: 7.5vh;
-    font-size: 130%;
+    width: 10vw;
+    height: 6.5vh;
+    font-size: 110%;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+@mixin h2 {
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 4%;
+    font-size: 190%;
+    color: $color-rojo-claro;
+}
+
+@mixin underline-izq-a-der {
+    display: inline-block;
+    //background-image: linear-gradient(black, black);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+    &:hover {
+        background-position: 100% 100%;
+        background-size: 100% 2px;
+        color: black;
+    }
 }
