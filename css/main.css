@@ -78,7 +78,7 @@ main {
           height: 6.5vh;
           font-size: 110%;
           font-family: Arial, Helvetica, sans-serif;
-          font-weight: 500; }
+          font-weight: 400; }
           main .background .card-texto .back-botones .boton-cursos:hover {
             border-color: #FC3657;
             background-color: #FC3657; }
@@ -90,7 +90,7 @@ main {
           height: 6.5vh;
           font-size: 110%;
           font-family: Arial, Helvetica, sans-serif;
-          font-weight: 500;
+          font-weight: 400;
           margin: 0% 7%; }
           main .background .card-texto .back-botones .boton-conocenos:hover {
             border-color: #FC3657;

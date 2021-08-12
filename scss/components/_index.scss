@@ -1,9 +1,8 @@
+// @MEDIAS HECHOS POR SECTION
+
 main {
     color: $color-negro;
-    
-    .main-index {
-        background: linear-gradient(176deg, rgba(255,255,255,1) 0%, rgba(234,242,227,1) 100%);
-    }
+    position: relative;
 
     .background {
         background-image: url("/assets/fondo-index.jpg");
@@ -17,26 +16,66 @@ main {
         padding: 8% 0% 0% 4%;
         z-index: 1;
         position: relative;
+        // .BACKGROUND @MEDIAS
+        @media screen and (max-width: 1200px) {
+            padding: 2% 0% 0% 4%;
+            height: 80vh;
+        }
+        @media screen and (max-width: 900px) {
+            padding: 2% 0% 0% 4%;
+            height: 70vh;
+        }
+        @media screen and (max-width: 820px) {
+            padding: 2% 0% 0% 4%;
+            height: 65vh;
+        }
+        @media screen and (max-width: 750px) {
+            padding: 2% 0% 0% 4%;
+            height: 70vh;
+        }
+        @media screen and (max-width: 650px) {
+            padding: 3% 0% 0% 4%;
+            height: 65vh;
+        }
+        @media screen and (max-width: 600px) {
+            height: 65vh;
+        }
+        @media screen and (max-width: 550px) {
+            padding: 2% 0% 0% 4%;
+            height: 60vh;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 2% 0% 0% 4%;
+            height: 55vh;
+        }
+        @media screen and (max-width: 450px) {
+            padding: 2% 0% 0% 4%;
+            height: 48vh;
+        }
+        @media screen and (max-width: 360px) {
+            padding: 2% 0% 0% 4%;
+            height: 45vh;
+        }
         .card-texto {
             position: absolute;
             left: 4%;
             background: none;
-            border-color: none;
-            width: 37vw;
+            width: 33vw;
             height: 58vh;
             color: white;
             h1 {
                 padding: 5% 4% 2% 4%;
                 font-weight: 900;
-                font-size: 190%;
+                font-size: 3vw;
             }
             p {
-                padding: 5% 4% 0% 4%;
-                font-size: 125%;
+                padding: 5% 4% 3% 4%;
+                font-size: 1.4vw;
             }
             .back-botones {
                 padding-top: 5%;
                 margin-left: -3%;
+                font-size: 1vw;
                 .boton-cursos {
                     color: white;
                     border-color: $color-rojo-claro;
@@ -56,6 +95,252 @@ main {
                     &:hover {
                         border-color: $color-rojo;
                         color: $color-rojo;
+                    }
+                }
+            }
+            // .CARD-TEXTO @MEDIAS
+            @media screen and (max-width: 1200px) {
+                width: 40vw;
+                height: 70vh;
+                h1 {
+                    font-size: 3.8vw;
+                }
+                p {
+                    font-size: 1.7vw;
+                }
+                .back-botones {
+                    font-size: vw;
+                    .boton-cursos {
+                        width: 11vw;
+                        height: 6vh;
+                    }
+                    .boton-conocenos {
+                        width: 11vw;
+                        height: 6vh;
+                    }
+                }
+            }
+            @media screen and (max-width: 955px) {
+                width: 50vw;
+                height: 70vh;
+                h1 {
+                    font-size: 3.5vw;
+                }
+                p {
+                    font-size: 1.6vw;
+                    width: 77%;
+                }
+                .back-botones {
+                    font-size: 1.2vw;
+                    .boton-cursos {
+                        width: 13vw;
+                        height: 6vh;
+                    }
+                    .boton-conocenos {
+                        width: 13vw;
+                        height: 6vh;
+                    }
+                }
+            }
+            @media screen and (max-width: 900px) {
+                width: 50vw;
+                height: 70vh;
+                h1 {
+                    font-size: 3.5vw;
+                }
+                p {
+                    font-size: 1.6vw;
+                    width: 77%;
+                }
+                .back-botones {
+                    font-size: 1.2vw;
+                    .boton-cursos {
+                        width: 13vw;
+                        height: 6vh;
+                    }
+                    .boton-conocenos {
+                        width: 13vw;
+                        height: 6vh;
+                    }
+                }
+            }
+            @media screen and (max-width: 750px) {
+                width: 65vw;
+                height: 70vh;
+                h1 {
+                    padding: 6% 4% 0% 4%;
+                    font-size: 4.4vw;
+                }
+                p {
+                    padding: 4% 4% 3% 4%;
+                    font-size: 2vw;
+                    width: 75%;
+                }
+                .back-botones {
+                    font-size: 1.5vw;
+                    .boton-cursos {
+                        width: 15vw;
+                        height: 6.5vh;
+                    }
+                    .boton-conocenos {
+                        width: 15vw;
+                        height: 6.5vh;
+                    }
+                }
+            }
+            @media screen and (max-width: 650px) {
+                width: 70vw;
+                h1 {
+                    font-size: 5.5vw;
+                }
+                p {
+                    font-size: 2.5vw;
+                    width: 90%;
+                }
+                .back-botones {
+                    font-size: 2vw;
+                    .boton-cursos {
+                        width: 20vw;
+                        height: 5.2vh;
+                    }
+                    .boton-conocenos {
+                        width: 20vw;
+                        height: 5.2vh;
+                        margin: 0% 6%;
+                    }
+                }
+            }
+            @media screen and (max-width: 500px) {
+                h1 {
+                    font-size: 6vw;
+                }
+                p {
+                    font-size: 2.7vw;
+                    width: 90%;
+                }
+                .back-botones {
+                    font-size: 2vw;
+                    .boton-cursos {
+                        width: 22vw;
+                        height: 5vh;
+                    }
+                    .boton-conocenos {
+                        width: 22vw;
+                        height: 5vh;
+                        margin: 0% 7%;
+                    }
+                }
+            }
+            @media screen and (max-width: 450px) {
+                width: 70vw;
+                height: 70vh;
+                h1 {
+                    font-size: 6vw;
+                }
+                p {
+                    font-size: 2.7vw;
+                    width: 90%;
+                }
+                .back-botones {
+                    font-size: 2vw;
+                    .boton-cursos {
+                        width: 22vw;
+                        height: 5vh;
+                    }
+                    .boton-conocenos {
+                        width: 22vw;
+                        height: 5vh;
+                    }
+                }
+            }
+            @media screen and (max-width: 400px) {
+                width: 75vw;
+                height: 70vh;
+                h1 {
+                    font-size: 5.5vw;
+                }
+                p {
+                    font-size: 2.5vw;
+                    width: 80%;
+                }
+                .back-botones {
+                    font-size: 1.6vw;
+                    .boton-cursos {
+                        width: 18vw;
+                        height: 5vh;
+                    }
+                    .boton-conocenos {
+                        width: 18vw;
+                        height: 5vh;
+                    }
+                }
+            }
+            @media screen and (max-width: 400px) {
+                width: 70vw;
+                height: 70vh;
+                h1 {
+                    font-size: 6.5vw;
+                }
+                p {
+                    font-size: 2.9vw;
+                    width: 100%;
+                }
+                .back-botones {
+                    font-size: 2.1vw;
+                    .boton-cursos {
+                        width: 22vw;
+                        height: 5vh;
+                    }
+                    .boton-conocenos {
+                        width: 22vw;
+                        height: 5vh;
+                        margin: 0% 7%;
+                    }
+                }
+            }
+            @media screen and (max-width: 385px) {
+                width: 75vw;
+                height: 70vh;
+                h1 {
+                    font-size: 6.8vw;
+                }
+                p {
+                    font-size: 3.1vw;
+                    width: 100%;
+                }
+                .back-botones {
+                    font-size: 2.2vw;
+                    .boton-cursos {
+                        width: 26vw;
+                        height: 5vh;
+                    }
+                    .boton-conocenos {
+                        width: 26vw;
+                        height: 5vh;
+                        margin: 0% 7%;
+                    }
+                }
+            }
+            @media screen and (max-width: 385px) {
+                width: 75vw;
+                height: 70vh;
+                h1 {
+                    font-size: 6.8vw;
+                }
+                p {
+                    font-size: 3.2vw;
+                    width: 100%;
+                }
+                .back-botones {
+                    font-size: 2.4vw;
+                    .boton-cursos {
+                        width: 26vw;
+                        height: 5vh;
+                    }
+                    .boton-conocenos {
+                        width: 26vw;
+                        height: 5vh;
+                        margin: 0% 7%;
                     }
                 }
             }
@@ -104,6 +389,10 @@ main {
                 }
             }
         }
+        // .ICONOS-REDONDOS @MEDIAS
+        @media screen and (max-width: 1300px) {
+            
+        }
     }
 
     .index-secciones {
@@ -140,11 +429,34 @@ main {
                     padding: 0% 2%;
                 }
                 div {
-                    box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
-                    -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
-                    border-radius: 0.4rem;
-                    overflow: hidden;
-                    border-color: #E0E0E0;
+                    padding: 0% 2%;
+                    h3 {
+                        text-align: start;
+                        font-weight: 900;
+                        font-size: 150%;
+                        padding: 5% 0%;
+                    }
+                    p {
+                        padding-top: 5%;
+                        text-align: start;
+                        width: 40vw;
+                    }
+                    .manos-secciones {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-left: -3%;
+                        img {
+                            height: 5vh;
+                            padding-right: 15%;
+                        }
+                    }
+                }
+            }
+            .cursos {
+                h3 {
+                    @include underline-izq-a-der;
+                    background-image: linear-gradient($color-amarillo, $color-amarillo) !important;
                 }
             }
             .recursos {
@@ -172,6 +484,10 @@ main {
                 align-items: center;
                 
             }
+        }
+        // .INDEX-SECCIONES @MEDIAS
+        @media screen and (max-width: 1300px) {
+            
         }
     }
 
@@ -291,7 +607,9 @@ main {
                 }
             }
         }
-    
+        .trucazo {
+            opacity: 0;
+        }
     }
     .mapa {
         z-index: 1;
@@ -300,14 +618,22 @@ main {
             width: 100%;
         }
     }
+    .modal {
+        .btn-close {
+            background-color: white;
+        }
+        &-body {
+            text-align: center;
+            font-size: 1.5vw;
+        }
+        .cerrar {
+            padding: 2% 0% 5% 0%;
+            display: flex;
+            justify-content: center;
+            .btn-ok {
+                border-color: $color-rojo-claro;
+                background-color: $color-rojo-claro;
+            }
+        }
+    }
 }
-
-/*
-@keyframes cards_seccion {
-    0% { transform: translateY(-2px); }
-    25% { transform: translateY(-4px); }
-    50% { transform: translateY(-6px); }
-    75% { transform: translateY(-8px); }
-    100% { transform: translateY(-10px); }
-}
-*/
