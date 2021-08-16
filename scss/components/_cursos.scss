@@ -1,24 +1,58 @@
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 .banner {
-    background-image: url(../../assets/hero-cursos.jpg);
-    background-size: cover;
-    background-position: top;
     width: 100vw;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: left;
+    position: relative;
 
-
-    h1 {
-        font-weight: 900;
-        color: #FF637D;
-        margin: 4em 0 1em 0;
+    .banner-text {
+        position: absolute;
     }
 
-    p {
+
+    .mainTitle {
+        font-weight: 900;
+        color: #FF637D;
+        margin: 1em 0 0 3.5rem;
+        font-size: 6rem;
+
+        @media screen and (max-width: 992px) {
+            font-size: 4rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin: .5em 0 .2em 1.8rem;
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin: .6em 0 .2em 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    h1 {
         font-weight: 300;
         color: #FFFFFF;
+        margin: 0 0 0 4.2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: .8rem;
+            margin: 0 0 0 2.2rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: .8rem;
+            margin: 0 0 0 2.2rem;
+        }
     }
 }
 
@@ -64,7 +98,7 @@
             -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
             box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
 
-            @media screen and (min-width:768px) {
+            @media screen and (min-width:992px) {
                 flex-basis: 33.333%;
             }
 
@@ -79,6 +113,17 @@
                 font-weight: 300;
             }
 
+            .img-container {
+                max-height: 190px;
+                overflow: hidden;
+
+                &.cursoUno {
+                    img {
+                        margin-top: -1em;
+                    }
+                }
+            }
+
             .btn {
                 background-color: #FF637D;
                 color: #FFFFFF;
@@ -89,6 +134,11 @@
                 &:hover {
                     background-color: #FC3657;
                 }
+            }
+
+            .btn.btn-disabled {
+                background-color: #3d3d3d;
+                opacity: 60%;
             }
 
             .card-price {
@@ -118,7 +168,6 @@
         justify-content: start;
         flex-wrap: wrap;
 
-
         .filters {
             display: flex;
             flex-direction: column;
@@ -138,17 +187,40 @@
         }
     }
 
+    .filter-icon {
+        cursor: pointer;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-left: .5rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    .filters-container.uncollapsed {
+        display: none;
+    }
+
     .contenedor-videos {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
         .card {
-            width: 29rem;
-            margin: 1em 0 1em 0;
+            width: 48%;
+            margin: 1em 0;
             border: 0;
             -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
             box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+
+            @media screen and (max-width: 900px) {
+                width: 100%;
+            }
 
             .card-title {
                 font-weight: 800 !important;
@@ -159,6 +231,11 @@
                 padding: .5em 0 1.8em 0;
                 font-size: .9rem;
                 font-weight: 300;
+            }
+
+            .img-container {
+                max-height: 250px;
+                overflow: hidden;
             }
 
             .btn {
@@ -173,11 +250,21 @@
                 }
             }
 
+            .btn.btn-disabled {
+                background-color: #3d3d3d;
+                opacity: 60%;
+            }
+
             .card-price {
                 font-weight: 900;
                 font-size: 1.3rem;
                 padding-right: .4rem;
             }
+        }
+
+        .unavailable {
+            filter: grayscale(100%);
+            opacity: 90%;
         }
     }
 
@@ -194,61 +281,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3em 5rem 7em 5rem;
+    background-image: url(../../assets/clases-priv2.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 10rem 0 5rem 0;
 
     h2 {
         font-weight: 900;
-        margin: 0 0 2em 0;
+        margin: 0 0 1em 0;
         font-size: 2rem;
+        color: #F4F1BB;
     }
 
-    .clases-container {
-        display: flex;
-        justify-content: center;
-        margin: 0 7rem;
+    p {
+        color: #FFF;
+        font-size: 1em;
+        font-weight: 300;
+        padding: 1rem 2rem;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
 
 
-        .clases-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0 0 0 6rem;
+    .reservar-btn {
+        width: 13rem;
+        background-color: #FFDC73;
+        font-size: .9rem;
+        font-weight: 600;
+        letter-spacing: .02rem;
+        padding: .6em 1rem;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin: 3em 0;
 
-            p {
-                margin: 2em 2rem 2em 0;
-                font-weight: 400;
-                font-size: .9rem;
-            }
+        &:hover {
+            background-color: #fde59b;
+        }
 
-            li {
-                font-size: .9rem;
-                font-weight: 300;
-                padding: .6em 0;
-
-                i {
-                    color: #FF637D;
-                    font-size: 1.1rem;
-                    padding-right: .8rem;
-                }
-            }
-
-            .reservar-btn {
-                width: 13rem;
-                background-color: #FBC72E;
-                color: #272727;
-                font-size: .9rem;
-                font-weight: 600;
-                letter-spacing: .02rem;
-                padding: .6em 1rem;
-                border: none;
-                border-radius: 5px;
-                text-transform: uppercase;
-                margin: 3em 0;
-
-                &:hover {
-                    background-color: #FFDC73;
-                }
-            }
+        a {
+            color: #272727;
         }
     }
 }
