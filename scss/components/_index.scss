@@ -1065,61 +1065,28 @@ main {
             }
         }
         @media screen and (max-width: 650px) {
-            background-image: none;
             height: 70vh;
             .consulta {
                 bottom: 8.5%;
-                .consulta-titulo {
-                    color: rgb(0, 0, 0);
-                }
                 .card {
-                    border-color: rgb(231, 231, 231);
                     width: 60vw;
                     height: 78vh;
-                    &-body {
-                        padding: 4%;
-                        h3 {
-                            font-size: 140%;
-                        }
-                        .botones {
-                            padding: 5% 0% 3% 3%;
-                            button {
-                                font-size: 70%;
-                                width: 45%;
-                                &:nth-child(2) {
-                                    margin-left: 5%;
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
         @media screen and (max-width: 550px) {
-            background-image: none;
-            height: 70vh;
             .consulta {
                 bottom: 9.5%;
                 .consulta-titulo {
                     font-size: 135%;
                 }
                 .card {
-                    border-color: rgb(231, 231, 231);
                     width: 75vw;
                     height: 80vh;
                     &-body {
-                        padding: 4%;
-                        h3 {
-                            font-size: 140%;
-                        }
                         .botones {
-                            padding: 5% 0% 3% 3%;
                             button {
-                                font-size: 70%;
                                 width: 40%;
-                                &:nth-child(2) {
-                                    margin-left: 5%;
-                                }
                             }
                         }
                     }
@@ -1127,33 +1094,10 @@ main {
             }
         }
         @media screen and (max-width: 475px) {
-            background-image: none;
             height: 60vh;
             .consulta {
-                bottom: 9.5%;
-                .consulta-titulo {
-                    font-size: 135%;
-                }
                 .card {
-                    border-color: rgb(231, 231, 231);
-                    width: 75vw;
                     height: 75vh;
-                    &-body {
-                        padding: 4%;
-                        h3 {
-                            font-size: 140%;
-                        }
-                        .botones {
-                            padding: 5% 0% 3% 3%;
-                            button {
-                                font-size: 70%;
-                                width: 40%;
-                                &:nth-child(2) {
-                                    margin-left: 5%;
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -1166,54 +1110,22 @@ main {
                     font-size: 130%;
                 }
                 .card {
-                    border-color: rgb(231, 231, 231);
                     width: 90vw;
                     height: 77vh;
-                    &-body {
-                        padding: 4%;
-                        h3 {
-                            font-size: 140%;
-                        }
-                        .botones {
-                            padding: 5% 0% 3% 3%;
-                            button {
-                                font-size: 70%;
-                                width: 40%;
-                                &:nth-child(2) {
-                                    margin-left: 5%;
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
         @media screen and (max-width: 350px) {
-            background-image: none;
             height: 60vh;
             .consulta {
-                bottom: 11%;
                 .consulta-titulo {
                     font-size: 110%;
                 }
                 .card {
-                    border-color: rgb(231, 231, 231);
-                    width: 90vw;
                     height: 75vh;
                     &-body {
-                        padding: 4%;
                         h3 {
                             font-size: 120%;
-                        }
-                        .botones {
-                            padding: 5% 0% 3% 3%;
-                            button {
-                                font-size: 70%;
-                                width: 40%;
-                                &:nth-child(2) {
-                                    margin-left: 5%;
-                                }
-                            }
                         }
                     }
                 }
