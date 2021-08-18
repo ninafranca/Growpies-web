@@ -935,7 +935,7 @@ main {
             }
         }
         // @MEDIAS .BLOQUE_CONSULTA
-        @media screen and (max-width: 1380px) {
+        @media screen and (max-width: 1480px) {
             height: 80vh;
             .consulta {
                 .card {
@@ -959,7 +959,7 @@ main {
             .consulta {
                 .card {
                     width: 27vw;
-                    height: 76vh;
+                    height: 67vh;
                     &-body {
                         padding: 4%;
                         h3 {
@@ -981,7 +981,7 @@ main {
             .consulta {
                 .card {
                     width: 32vw;
-                    height: 78vh;
+                    height: 77vh;
                 }
             }
         }
@@ -996,7 +996,7 @@ main {
         }
         @media screen and (max-width: 750px) {
             background-image: none;
-            height: 67vh;
+            height: 65vh;
             .consulta {
                 bottom: 8%;
                 .consulta-titulo {
@@ -1005,7 +1005,7 @@ main {
                 .card {
                     border-color: rgb(231, 231, 231);
                     width: 45vw;
-                    height: 74vh;
+                    height: 75vh;
                     &-body {
                         padding: 4%;
                         h3 {
@@ -1025,9 +1025,9 @@ main {
                 }
             }
         }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 650px) {
             background-image: none;
-            height: 62vh;
+            height: 70vh;
             .consulta {
                 bottom: 8.5%;
                 .consulta-titulo {
@@ -1056,9 +1056,9 @@ main {
                 }
             }
         }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 550px) {
             background-image: none;
-            height: 65vh;
+            height: 70vh;
             .consulta {
                 bottom: 9.5%;
                 .consulta-titulo {
@@ -1067,7 +1067,38 @@ main {
                 .card {
                     border-color: rgb(231, 231, 231);
                     width: 75vw;
-                    height: 77vh;
+                    height: 80vh;
+                    &-body {
+                        padding: 4%;
+                        h3 {
+                            font-size: 140%;
+                        }
+                        .botones {
+                            padding: 5% 0% 3% 3%;
+                            button {
+                                font-size: 70%;
+                                width: 40%;
+                                &:nth-child(2) {
+                                    margin-left: 5%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 475px) {
+            background-image: none;
+            height: 60vh;
+            .consulta {
+                bottom: 9.5%;
+                .consulta-titulo {
+                    font-size: 135%;
+                }
+                .card {
+                    border-color: rgb(231, 231, 231);
+                    width: 75vw;
+                    height: 75vh;
                     &-body {
                         padding: 4%;
                         h3 {
@@ -1098,11 +1129,42 @@ main {
                 .card {
                     border-color: rgb(231, 231, 231);
                     width: 90vw;
-                    height: 78vh;
+                    height: 77vh;
                     &-body {
                         padding: 4%;
                         h3 {
                             font-size: 140%;
+                        }
+                        .botones {
+                            padding: 5% 0% 3% 3%;
+                            button {
+                                font-size: 70%;
+                                width: 40%;
+                                &:nth-child(2) {
+                                    margin-left: 5%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 350px) {
+            background-image: none;
+            height: 60vh;
+            .consulta {
+                bottom: 11%;
+                .consulta-titulo {
+                    font-size: 110%;
+                }
+                .card {
+                    border-color: rgb(231, 231, 231);
+                    width: 90vw;
+                    height: 75vh;
+                    &-body {
+                        padding: 4%;
+                        h3 {
+                            font-size: 120%;
                         }
                         .botones {
                             padding: 5% 0% 3% 3%;
