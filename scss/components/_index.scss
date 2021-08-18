@@ -51,7 +51,10 @@ main {
             height: 47vh;
         }
         @media screen and (max-width: 360px) {
-            height: 42vh;
+            height: 48vh;
+        }
+        @media screen and (max-width: 330px) {
+            height: 44vh;
         }
         .card-texto {
             position: absolute;
@@ -635,7 +638,16 @@ main {
             margin-top: 220%;
         }
         @media screen and (max-width: 575px) {
+            margin-top: 220%;
+            h2 {
+                font-size: 160%;
+            }
+        }
+        @media screen and (max-width: 540px) {
             margin-top: 230%;
+            h2 {
+                font-size: 160%;
+            }
         }
         @media screen and (max-width: 510px) {
             margin-top: 235%;
@@ -669,6 +681,20 @@ main {
         }
         @media screen and (max-width: 430px) {
             margin-top: 260%;
+            h2 {
+                font-size: 140%;
+            }
+            &_cards {
+                .index-secciones_card {
+                    div {
+                        .manos-secciones {
+                            h3 {
+                                font-size: 130%;
+                            }
+                        }
+                    }
+                }
+            }
         }
         @media screen and (max-width: 405px) {
             margin-top: 290%;
@@ -679,16 +705,28 @@ main {
                             img {
                                 height: 7vw;
                             }
-                            h3 {
-                                font-size: 150%;
-                            }
                         }
                     }
                 }
             }
         }
-        @media screen and (max-width: 350px) {
+        @media screen and (max-width: 360px) {
             margin-top: 300%;
+            h2 {
+                font-size: 130%;
+                padding-bottom: 5%;
+            }
+            &_cards {
+                .index-secciones_card {
+                    div {
+                        .manos-secciones {
+                            h3 {
+                                font-size: 110%;
+                            }
+                        }
+                    }
+                }
+            }
         }
         @media screen and (max-width: 335px) {
             margin-top: 310%;
