@@ -532,7 +532,7 @@ main {
             }
             .recursos {
                 h3 {
-                    margin-bottom: 2%;
+                    margin-bottom: 3%;
                     @include underline-izq-a-der;
                     background-image: linear-gradient($color-rojo, $color-rojo) !important;
                 }
