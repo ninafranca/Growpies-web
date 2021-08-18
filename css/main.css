@@ -45,10 +45,10 @@ main {
         height: 48vh; } }
     @media screen and (max-width: 400px) {
       main .background {
-        height: 40vh; } }
+        height: 47vh; } }
     @media screen and (max-width: 360px) {
       main .background {
-        height: 37vh; } }
+        height: 42vh; } }
     main .background .card-texto {
       position: absolute;
       left: 4%;
@@ -275,14 +275,22 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center; }
-        main .iconos-redondos-centrar .iconos-redondos_body_elemento h3 {
-          font-weight: 900;
-          font-size: 130%; }
-        main .iconos-redondos-centrar .iconos-redondos_body_elemento img {
-          width: 200%; }
-        main .iconos-redondos-centrar .iconos-redondos_body_elemento p {
-          font-size: 105%;
-          width: 210%; } }
+        main .iconos-redondos-centrar .iconos-redondos_body_elemento {
+          padding: 0% 0%; }
+          main .iconos-redondos-centrar .iconos-redondos_body_elemento h3 {
+            font-weight: 900;
+            font-size: 125%; }
+          main .iconos-redondos-centrar .iconos-redondos_body_elemento img {
+            width: 200%; }
+          main .iconos-redondos-centrar .iconos-redondos_body_elemento p {
+            font-size: 105%;
+            width: 210%; } }
+    @media screen and (max-width: 700px) {
+      main .iconos-redondos-centrar .iconos-redondos_body_elemento h3 {
+        font-size: 110%; } }
+    @media screen and (max-width: 650px) {
+      main .iconos-redondos-centrar .iconos-redondos_body_elemento h3 {
+        font-size: 105%; } }
     @media screen and (max-width: 575px) {
       main .iconos-redondos-centrar .iconos-redondos {
         width: 90vw; }
@@ -406,81 +414,96 @@ main {
       main .index-secciones {
         margin-top: 50%; } }
     @media screen and (max-width: 1200px) {
-      main .index-secciones_cards {
-        padding-top: 3%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
+      main .index-secciones {
+        margin-top: 58%; }
+        main .index-secciones_cards .index-secciones_card img {
+          width: 60%;
+          padding: 0% 0%; }
+        main .index-secciones_cards .index-secciones_card div p {
+          width: 37vw; } }
+    @media screen and (max-width: 1000px) {
+      main .index-secciones {
+        margin-top: 60%; } }
+    @media screen and (max-width: 900px) {
+      main .index-secciones {
+        margin-top: 65%; } }
+    @media screen and (max-width: 830px) {
+      main .index-secciones {
+        margin-top: 70%; } }
+    @media screen and (max-width: 750px) {
+      main .index-secciones {
+        margin-top: 210%; }
+        main .index-secciones_p {
+          margin: 0% 10%; }
         main .index-secciones_cards .index-secciones_card {
-          margin-bottom: 0%;
           display: flex;
-          align-items: center; }
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 2%; }
           main .index-secciones_cards .index-secciones_card img {
-            width: 60%;
-            padding: 0% 5%; }
+            padding-top: 5%;
+            width: 80%; }
           main .index-secciones_cards .index-secciones_card div {
-            padding: 0% 2%; }
-            main .index-secciones_cards .index-secciones_card div h3 {
-              text-align: start;
-              font-weight: 900;
-              font-size: 150%;
-              padding: 5% 0%; }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 2.5%; }
             main .index-secciones_cards .index-secciones_card div p {
-              padding-top: 5%;
-              text-align: start;
-              width: 37vw; }
-            main .index-secciones_cards .index-secciones_card div .manos-secciones {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              margin-left: -3%; }
-              main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-                height: 5vh;
-                padding-right: 15%; }
-        main .index-secciones_cards .cursos h3 {
-          display: inline-block;
-          background-position: 0 100%;
-          background-size: 0% 2px;
-          background-repeat: no-repeat;
-          transition: background-size 0.3s, background-position 0s 0.3s;
-          background-image: linear-gradient(#FBC72E, #FBC72E) !important; }
-          main .index-secciones_cards .cursos h3:hover {
-            background-position: 100% 100%;
-            background-size: 100% 2px;
-            color: black; }
-        main .index-secciones_cards .recursos img {
-          margin-left: -8%; }
-        main .index-secciones_cards .recursos h3 {
-          margin-bottom: 2%;
-          display: inline-block;
-          background-position: 0 100%;
-          background-size: 0% 2px;
-          background-repeat: no-repeat;
-          transition: background-size 0.3s, background-position 0s 0.3s;
-          background-image: linear-gradient(#FC3657, #FC3657) !important; }
-          main .index-secciones_cards .recursos h3:hover {
-            background-position: 100% 100%;
-            background-size: 100% 2px;
-            color: black; }
-        main .index-secciones_cards .blog h3 {
-          margin-bottom: 2%;
-          display: inline-block;
-          background-position: 0 100%;
-          background-size: 0% 2px;
-          background-repeat: no-repeat;
-          transition: background-size 0.3s, background-position 0s 0.3s;
-          background-image: linear-gradient(#66D7D1, #66D7D1) !important; }
-          main .index-secciones_cards .blog h3:hover {
-            background-position: 100% 100%;
-            background-size: 100% 2px;
-            color: black; }
-        main .index-secciones_cards a {
-          color: #272727;
-          margin: 0% 2.5%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center; } }
+              width: 80%; }
+            main .index-secciones_cards .index-secciones_card div .manos-secciones img {
+              height: 5vw; }
+            main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
+              font-size: 170%; } }
+    @media screen and (max-width: 700px) {
+      main .index-secciones {
+        margin-top: 220%; } }
+    @media screen and (max-width: 650px) {
+      main .index-secciones {
+        margin-top: 230%; } }
+    @media screen and (max-width: 600px) {
+      main .index-secciones {
+        margin-top: 235%; } }
+    @media screen and (max-width: 575px) {
+      main .index-secciones {
+        margin-top: 220%; } }
+    @media screen and (max-width: 575px) {
+      main .index-secciones {
+        margin-top: 230%; } }
+    @media screen and (max-width: 510px) {
+      main .index-secciones {
+        margin-top: 235%; }
+        main .index-secciones h2 {
+          font-size: 165%; }
+        main .index-secciones_cards .index-secciones_card div .manos-secciones img {
+          height: 6vw; }
+        main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
+          font-size: 150%; } }
+    @media screen and (max-width: 475px) {
+      main .index-secciones {
+        margin-top: 250%; }
+        main .index-secciones_cards .index-secciones_card div {
+          padding: 0% 0%; } }
+    @media screen and (max-width: 430px) {
+      main .index-secciones {
+        margin-top: 260%; } }
+    @media screen and (max-width: 405px) {
+      main .index-secciones {
+        margin-top: 290%; }
+        main .index-secciones_cards .index-secciones_card div .manos-secciones img {
+          height: 7vw; }
+        main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
+          font-size: 150%; } }
+    @media screen and (max-width: 350px) {
+      main .index-secciones {
+        margin-top: 300%; } }
+    @media screen and (max-width: 335px) {
+      main .index-secciones {
+        margin-top: 310%; } }
+    @media screen and (max-width: 323px) {
+      main .index-secciones {
+        margin-top: 330%; } }
   main .reservar-clase {
     display: flex;
     align-items: center;
@@ -500,6 +523,67 @@ main {
         main .reservar-clase a button:hover {
           border-color: #FBC72E;
           background-color: #FBC72E; }
+    @media screen and (max-width: 1310px) {
+      main .reservar-clase a {
+        padding-top: 0%; }
+        main .reservar-clase a button {
+          width: 18vw;
+          height: 8vh;
+          font-size: 110%; } }
+    @media screen and (max-width: 1185px) {
+      main .reservar-clase a button {
+        width: 19vw;
+        height: 8.5vh;
+        font-size: 105%; } }
+    @media screen and (max-width: 1070px) {
+      main .reservar-clase a button {
+        width: 20vw;
+        font-size: 100%; } }
+    @media screen and (max-width: 980px) {
+      main .reservar-clase a button {
+        width: 22vw;
+        height: 9vh; } }
+    @media screen and (max-width: 890px) {
+      main .reservar-clase a button {
+        width: 24vw; } }
+    @media screen and (max-width: 815px) {
+      main .reservar-clase a button {
+        width: 25vw;
+        height: 8.5vh;
+        font-size: 95%; } }
+    @media screen and (max-width: 750px) {
+      main .reservar-clase a button {
+        width: 27vw;
+        height: 7vh;
+        font-size: 95%; } }
+    @media screen and (max-width: 700px) {
+      main .reservar-clase a button {
+        width: 29vw;
+        font-size: 95%; } }
+    @media screen and (max-width: 650px) {
+      main .reservar-clase a button {
+        width: 30vw;
+        height: 8.5vh;
+        font-size: 90%; } }
+    @media screen and (max-width: 600px) {
+      main .reservar-clase a button {
+        width: 35vw; } }
+    @media screen and (max-width: 510px) {
+      main .reservar-clase a button {
+        width: 40vw; } }
+    @media screen and (max-width: 445px) {
+      main .reservar-clase a button {
+        width: 45vw;
+        height: 8vh; } }
+    @media screen and (max-width: 400px) {
+      main .reservar-clase a button {
+        width: 50vw;
+        height: 7.5vh; } }
+    @media screen and (max-width: 360px) {
+      main .reservar-clase a button {
+        font-size: 75%;
+        width: 50vw;
+        height: 7vh; } }
   main .bloque-consulta {
     padding-top: 40%;
     background-image: url("/assets/fondo-consulta.jpg");
@@ -576,8 +660,136 @@ main {
                 main .bloque-consulta .consulta .card-body .botones button:nth-child(2):hover {
                   color: #FC3657;
                   border-color: #FC3657; }
-    main .bloque-consulta .trucazo {
-      opacity: 0; }
+    @media screen and (max-width: 1380px) {
+      main .bloque-consulta {
+        height: 80vh; }
+        main .bloque-consulta .consulta .card {
+          height: 65vh; }
+          main .bloque-consulta .consulta .card-body {
+            padding: 4%; }
+            main .bloque-consulta .consulta .card-body h3 {
+              font-size: 140%; }
+            main .bloque-consulta .consulta .card-body .botones button {
+              font-size: 80%; } }
+    @media screen and (max-width: 1180px) {
+      main .bloque-consulta {
+        height: 70vh; }
+        main .bloque-consulta .consulta .card {
+          width: 27vw;
+          height: 76vh; }
+          main .bloque-consulta .consulta .card-body {
+            padding: 4%; }
+            main .bloque-consulta .consulta .card-body h3 {
+              font-size: 140%; }
+            main .bloque-consulta .consulta .card-body .botones {
+              padding: 5% 0% 3% 3%; }
+              main .bloque-consulta .consulta .card-body .botones button {
+                font-size: 70%;
+                width: 45%; } }
+    @media screen and (max-width: 1000px) {
+      main .bloque-consulta {
+        height: 70vh; }
+        main .bloque-consulta .consulta .card {
+          width: 32vw;
+          height: 78vh; } }
+    @media screen and (max-width: 850px) {
+      main .bloque-consulta {
+        height: 65vh; }
+        main .bloque-consulta .consulta .card {
+          width: 35vw;
+          height: 75vh; } }
+    @media screen and (max-width: 750px) {
+      main .bloque-consulta {
+        background-image: none;
+        height: 67vh; }
+        main .bloque-consulta .consulta {
+          bottom: 8%; }
+          main .bloque-consulta .consulta .consulta-titulo {
+            color: black; }
+          main .bloque-consulta .consulta .card {
+            border-color: #e7e7e7;
+            width: 45vw;
+            height: 74vh; }
+            main .bloque-consulta .consulta .card-body {
+              padding: 4%; }
+              main .bloque-consulta .consulta .card-body h3 {
+                font-size: 140%; }
+              main .bloque-consulta .consulta .card-body .botones {
+                padding: 5% 0% 3% 3%; }
+                main .bloque-consulta .consulta .card-body .botones button {
+                  font-size: 70%;
+                  width: 45%; }
+                  main .bloque-consulta .consulta .card-body .botones button:nth-child(2) {
+                    margin-left: 5%; } }
+    @media screen and (max-width: 600px) {
+      main .bloque-consulta {
+        background-image: none;
+        height: 62vh; }
+        main .bloque-consulta .consulta {
+          bottom: 8.5%; }
+          main .bloque-consulta .consulta .consulta-titulo {
+            color: black; }
+          main .bloque-consulta .consulta .card {
+            border-color: #e7e7e7;
+            width: 60vw;
+            height: 78vh; }
+            main .bloque-consulta .consulta .card-body {
+              padding: 4%; }
+              main .bloque-consulta .consulta .card-body h3 {
+                font-size: 140%; }
+              main .bloque-consulta .consulta .card-body .botones {
+                padding: 5% 0% 3% 3%; }
+                main .bloque-consulta .consulta .card-body .botones button {
+                  font-size: 70%;
+                  width: 45%; }
+                  main .bloque-consulta .consulta .card-body .botones button:nth-child(2) {
+                    margin-left: 5%; } }
+    @media screen and (max-width: 500px) {
+      main .bloque-consulta {
+        background-image: none;
+        height: 65vh; }
+        main .bloque-consulta .consulta {
+          bottom: 9.5%; }
+          main .bloque-consulta .consulta .consulta-titulo {
+            font-size: 135%; }
+          main .bloque-consulta .consulta .card {
+            border-color: #e7e7e7;
+            width: 75vw;
+            height: 77vh; }
+            main .bloque-consulta .consulta .card-body {
+              padding: 4%; }
+              main .bloque-consulta .consulta .card-body h3 {
+                font-size: 140%; }
+              main .bloque-consulta .consulta .card-body .botones {
+                padding: 5% 0% 3% 3%; }
+                main .bloque-consulta .consulta .card-body .botones button {
+                  font-size: 70%;
+                  width: 40%; }
+                  main .bloque-consulta .consulta .card-body .botones button:nth-child(2) {
+                    margin-left: 5%; } }
+    @media screen and (max-width: 400px) {
+      main .bloque-consulta {
+        background-image: none;
+        height: 65vh; }
+        main .bloque-consulta .consulta {
+          bottom: 11%; }
+          main .bloque-consulta .consulta .consulta-titulo {
+            font-size: 130%; }
+          main .bloque-consulta .consulta .card {
+            border-color: #e7e7e7;
+            width: 90vw;
+            height: 78vh; }
+            main .bloque-consulta .consulta .card-body {
+              padding: 4%; }
+              main .bloque-consulta .consulta .card-body h3 {
+                font-size: 140%; }
+              main .bloque-consulta .consulta .card-body .botones {
+                padding: 5% 0% 3% 3%; }
+                main .bloque-consulta .consulta .card-body .botones button {
+                  font-size: 70%;
+                  width: 40%; }
+                  main .bloque-consulta .consulta .card-body .botones button:nth-child(2) {
+                    margin-left: 5%; } }
   main .mapa {
     z-index: 1;
     position: relative; }
@@ -595,6 +807,14 @@ main {
     main .modal .cerrar .btn-ok {
       border-color: #FF637D;
       background-color: #FF637D; }
+
+@media screen and (min-width: 751px) {
+  .index-secciones-mobile {
+    display: none; } }
+
+@media screen and (max-width: 750px) {
+  .index-secciones-desktop {
+    display: none; } }
 
 header .menu-desktop {
   display: flex;
