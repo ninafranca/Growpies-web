@@ -552,10 +552,12 @@ main {
         height: 8.5vh;
         font-size: 95%; } }
     @media screen and (max-width: 750px) {
-      main .reservar-clase a button {
-        width: 27vw;
-        height: 7vh;
-        font-size: 95%; } }
+      main .reservar-clase {
+        padding: 0% 0% 10% 0%; }
+        main .reservar-clase a button {
+          width: 27vw;
+          height: 7vh;
+          font-size: 95%; } }
     @media screen and (max-width: 700px) {
       main .reservar-clase a button {
         width: 29vw;
@@ -646,20 +648,20 @@ main {
             main .bloque-consulta .consulta .card-body .botones button {
               width: 40%; }
               main .bloque-consulta .consulta .card-body .botones button:nth-child(1) {
-                border-color: #FFDC73;
-                background-color: #FFDC73;
-                font-weight: 700; }
-                main .bloque-consulta .consulta .card-body .botones button:nth-child(1):hover {
-                  border-color: #FBC72E;
-                  background-color: #FBC72E; }
-              main .bloque-consulta .consulta .card-body .botones button:nth-child(2) {
-                margin-left: 5%;
                 border-color: #FF637D;
                 color: #FF637D;
                 font-weight: 700; }
-                main .bloque-consulta .consulta .card-body .botones button:nth-child(2):hover {
+                main .bloque-consulta .consulta .card-body .botones button:nth-child(1):hover {
                   color: #FC3657;
                   border-color: #FC3657; }
+              main .bloque-consulta .consulta .card-body .botones button:nth-child(2) {
+                margin-left: 5%;
+                border-color: #FFDC73;
+                background-color: #FFDC73;
+                font-weight: 700; }
+                main .bloque-consulta .consulta .card-body .botones button:nth-child(2):hover {
+                  border-color: #FBC72E;
+                  background-color: #FBC72E; }
     @media screen and (max-width: 1480px) {
       main .bloque-consulta {
         height: 80vh; }

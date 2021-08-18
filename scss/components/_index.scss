@@ -1,4 +1,4 @@
-// @MEDIAS HECHOS POR SECTION
+// @MEDIAS HECHOS POR BLOQUE
 
 main {
     color: $color-negro;
@@ -16,7 +16,7 @@ main {
         padding: 8% 0% 0% 4%;
         z-index: 1;
         position: relative;
-        // .BACKGROUND @MEDIAS
+        // @MEDIAS .BACKGROUND
         @media screen and (max-width: 1200px) {
             padding: 2% 0% 0% 4%;
             height: 80vh;
@@ -95,7 +95,7 @@ main {
                     }
                 }
             }
-            // .CARD-TEXTO @MEDIAS
+            // @MEDIAS .CARD-TEXTO
             @media screen and (max-width: 1200px) {
                 width: 40vw;
                 height: 70vh;
@@ -281,7 +281,7 @@ main {
                 }
             }
         }
-        // .ICONOS-REDONDOS @MEDIAS
+        // @MEDIAS .ICONOS-REDONDOS
         @media screen and (max-width: 1200px) {
             .iconos-redondos {
                 &_body {
@@ -553,7 +553,7 @@ main {
                 
             }
         }
-        // .INDEX-SECCIONES @MEDIAS
+        // @MEDIAS .INDEX-SECCIONES
         @media screen and (min-width: 1700px) {
             margin-top: 48%;
         }
@@ -773,6 +773,7 @@ main {
             }
         }
         @media screen and (max-width: 750px) {
+            padding: 0% 0% 10% 0%;
             a {
                 button {
                     width: 27vw;
@@ -911,22 +912,22 @@ main {
                         button {
                             width: 40%;
                             &:nth-child(1) {
-                                border-color: $color-amarillo-claro;
-                                background-color: $color-amarillo-claro;
-                                font-weight: 700;
-                                &:hover {
-                                    border-color: $color-amarillo;
-                                    background-color: $color-amarillo;
-                                }
-                            }
-                            &:nth-child(2) {
-                                margin-left: 5%;
                                 border-color: $color-rojo-claro;
                                 color: $color-rojo-claro;
                                 font-weight: 700;
                                 &:hover {
                                     color: $color-rojo;
                                     border-color: $color-rojo;
+                                }
+                            }
+                            &:nth-child(2) {
+                                margin-left: 5%;
+                                border-color: $color-amarillo-claro;
+                                background-color: $color-amarillo-claro;
+                                font-weight: 700;
+                                &:hover {
+                                    border-color: $color-amarillo;
+                                    background-color: $color-amarillo;
                                 }
                             }
                         }
