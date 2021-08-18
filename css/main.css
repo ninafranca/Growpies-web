@@ -876,7 +876,9 @@ header .menu-mobile {
           align-self: center;
           margin: 0% 4%; }
         header .menu-mobile .mobile-div .dropdown {
-          margin-top: 1%; } }
+          margin-top: 1%; }
+        header .menu-mobile .mobile-div a {
+          color: #272727; } }
   @media screen and (max-width: 600px) {
     header .menu-mobile .a-logo .logo {
       width: 12vw; } }

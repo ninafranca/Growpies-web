@@ -70,6 +70,9 @@ header {
                 .dropdown {
                     margin-top: 1%;
                 }
+                a {
+                    color: $color-negro;
+                }
             }
         }
         @media screen and (max-width: 600px) {
