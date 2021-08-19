@@ -9,20 +9,9 @@ header {
         a {
             font-size: 120%;
             color: $color-negro;
-<<<<<<< HEAD
             margin: 0% 2%;
             @include underline-izq-a-der;
             background-image: linear-gradient($color-rojo, $color-rojo) !important;
-=======
-            padding: 0% 2%;
-            &:hover {
-                text-decoration: underline;
-                color: $color-negro;
-                text-decoration-color: #FF637D;
-                text-decoration-thickness: 15%;
-                font-weight: 700;
-            }
->>>>>>> da07048fbc7ca4d67aeed4faf9c2e61eb0fe8f2c
         }
     }
     .a-logo {

@@ -1,6 +1,7 @@
 main {
-  color: #272727;
-  position: relative; }
+  color: #272727; }
+  main .main-index {
+    background: linear-gradient(176deg, white 0%, #eaf2e3 100%); }
   main .background {
     background-image: url("/assets/fondo-index.jpg");
     height: 100vh;
@@ -13,63 +14,24 @@ main {
     padding: 8% 0% 0% 4%;
     z-index: 1;
     position: relative; }
-    @media screen and (max-width: 1200px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 80vh; } }
-    @media screen and (max-width: 900px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 70vh; } }
-    @media screen and (max-width: 820px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 65vh; } }
-    @media screen and (max-width: 750px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 70vh; } }
-    @media screen and (max-width: 650px) {
-      main .background {
-        padding: 3% 0% 0% 4%;
-        height: 65vh; } }
-    @media screen and (max-width: 600px) {
-      main .background {
-        height: 65vh; } }
-    @media screen and (max-width: 550px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 60vh; } }
-    @media screen and (max-width: 500px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 55vh; } }
-    @media screen and (max-width: 450px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 48vh; } }
-    @media screen and (max-width: 360px) {
-      main .background {
-        padding: 2% 0% 0% 4%;
-        height: 45vh; } }
     main .background .card-texto {
       position: absolute;
       left: 4%;
       background: none;
-      width: 33vw;
+      border-color: none;
+      width: 37vw;
       height: 58vh;
       color: white; }
       main .background .card-texto h1 {
         padding: 5% 4% 2% 4%;
         font-weight: 900;
-        font-size: 3vw; }
+        font-size: 190%; }
       main .background .card-texto p {
-        padding: 5% 4% 3% 4%;
-        font-size: 1.4vw; }
+        padding: 5% 4% 0% 4%;
+        font-size: 125%; }
       main .background .card-texto .back-botones {
         padding-top: 5%;
-        margin-left: -3%;
-        font-size: 1vw; }
+        margin-left: -3%; }
         main .background .card-texto .back-botones .boton-cursos {
           color: white;
           border-color: #FF637D;
@@ -95,195 +57,6 @@ main {
           main .background .card-texto .back-botones .boton-conocenos:hover {
             border-color: #FC3657;
             color: #FC3657; }
-      @media screen and (max-width: 1200px) {
-        main .background .card-texto {
-          width: 40vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 3.8vw; }
-          main .background .card-texto p {
-            font-size: 1.7vw; }
-          main .background .card-texto .back-botones {
-            font-size: vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 11vw;
-              height: 6vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 11vw;
-              height: 6vh; } }
-      @media screen and (max-width: 955px) {
-        main .background .card-texto {
-          width: 50vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 3.5vw; }
-          main .background .card-texto p {
-            font-size: 1.6vw;
-            width: 77%; }
-          main .background .card-texto .back-botones {
-            font-size: 1.2vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 13vw;
-              height: 6vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 13vw;
-              height: 6vh; } }
-      @media screen and (max-width: 900px) {
-        main .background .card-texto {
-          width: 50vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 3.5vw; }
-          main .background .card-texto p {
-            font-size: 1.6vw;
-            width: 77%; }
-          main .background .card-texto .back-botones {
-            font-size: 1.2vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 13vw;
-              height: 6vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 13vw;
-              height: 6vh; } }
-      @media screen and (max-width: 750px) {
-        main .background .card-texto {
-          width: 65vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            padding: 6% 4% 0% 4%;
-            font-size: 4.4vw; }
-          main .background .card-texto p {
-            padding: 4% 4% 3% 4%;
-            font-size: 2vw;
-            width: 75%; }
-          main .background .card-texto .back-botones {
-            font-size: 1.5vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 15vw;
-              height: 6.5vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 15vw;
-              height: 6.5vh; } }
-      @media screen and (max-width: 650px) {
-        main .background .card-texto {
-          width: 70vw; }
-          main .background .card-texto h1 {
-            font-size: 5.5vw; }
-          main .background .card-texto p {
-            font-size: 2.5vw;
-            width: 90%; }
-          main .background .card-texto .back-botones {
-            font-size: 2vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 20vw;
-              height: 5.2vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 20vw;
-              height: 5.2vh;
-              margin: 0% 6%; } }
-      @media screen and (max-width: 500px) {
-        main .background .card-texto h1 {
-          font-size: 6vw; }
-        main .background .card-texto p {
-          font-size: 2.7vw;
-          width: 90%; }
-        main .background .card-texto .back-botones {
-          font-size: 2vw; }
-          main .background .card-texto .back-botones .boton-cursos {
-            width: 22vw;
-            height: 5vh; }
-          main .background .card-texto .back-botones .boton-conocenos {
-            width: 22vw;
-            height: 5vh;
-            margin: 0% 7%; } }
-      @media screen and (max-width: 450px) {
-        main .background .card-texto {
-          width: 70vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 6vw; }
-          main .background .card-texto p {
-            font-size: 2.7vw;
-            width: 90%; }
-          main .background .card-texto .back-botones {
-            font-size: 2vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 22vw;
-              height: 5vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 22vw;
-              height: 5vh; } }
-      @media screen and (max-width: 400px) {
-        main .background .card-texto {
-          width: 75vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 5.5vw; }
-          main .background .card-texto p {
-            font-size: 2.5vw;
-            width: 80%; }
-          main .background .card-texto .back-botones {
-            font-size: 1.6vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 18vw;
-              height: 5vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 18vw;
-              height: 5vh; } }
-      @media screen and (max-width: 400px) {
-        main .background .card-texto {
-          width: 70vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 6.5vw; }
-          main .background .card-texto p {
-            font-size: 2.9vw;
-            width: 100%; }
-          main .background .card-texto .back-botones {
-            font-size: 2.1vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 22vw;
-              height: 5vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 22vw;
-              height: 5vh;
-              margin: 0% 7%; } }
-      @media screen and (max-width: 385px) {
-        main .background .card-texto {
-          width: 75vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 6.8vw; }
-          main .background .card-texto p {
-            font-size: 3.1vw;
-            width: 100%; }
-          main .background .card-texto .back-botones {
-            font-size: 2.2vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 26vw;
-              height: 5vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 26vw;
-              height: 5vh;
-              margin: 0% 7%; } }
-      @media screen and (max-width: 385px) {
-        main .background .card-texto {
-          width: 75vw;
-          height: 70vh; }
-          main .background .card-texto h1 {
-            font-size: 6.8vw; }
-          main .background .card-texto p {
-            font-size: 3.2vw;
-            width: 100%; }
-          main .background .card-texto .back-botones {
-            font-size: 2.4vw; }
-            main .background .card-texto .back-botones .boton-cursos {
-              width: 26vw;
-              height: 5vh; }
-            main .background .card-texto .back-botones .boton-conocenos {
-              width: 26vw;
-              height: 5vh;
-              margin: 0% 7%; } }
   main .iconos-redondos-centrar {
     display: flex;
     justify-content: center; }
@@ -358,35 +131,11 @@ main {
           width: 60%;
           padding: 0% 2%; }
         main .index-secciones_cards .index-secciones_card div {
-          padding: 0% 2%; }
-          main .index-secciones_cards .index-secciones_card div h3 {
-            text-align: start;
-            font-weight: 900;
-            font-size: 150%;
-            padding: 5% 0%; }
-          main .index-secciones_cards .index-secciones_card div p {
-            padding-top: 5%;
-            text-align: start;
-            width: 40vw; }
-          main .index-secciones_cards .index-secciones_card div .manos-secciones {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-left: -3%; }
-            main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-              height: 5vh;
-              padding-right: 15%; }
-      main .index-secciones_cards .cursos h3 {
-        display: inline-block;
-        background-position: 0 100%;
-        background-size: 0% 2px;
-        background-repeat: no-repeat;
-        transition: background-size 0.3s, background-position 0s 0.3s;
-        background-image: linear-gradient(#FBC72E, #FBC72E) !important; }
-        main .index-secciones_cards .cursos h3:hover {
-          background-position: 100% 100%;
-          background-size: 100% 2px;
-          color: black; }
+          box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+          -webkit-box-shadow: 3px 8px 7px -1px rgba(0, 0, 0, 0.23);
+          border-radius: 0.4rem;
+          overflow: hidden;
+          border-color: #E0E0E0; }
       main .index-secciones_cards .recursos img {
         margin-left: -8%; }
       main .index-secciones_cards .recursos h3 {
@@ -514,41 +263,31 @@ main {
                 main .bloque-consulta .consulta .card-body .botones button:nth-child(2):hover {
                   color: #FC3657;
                   border-color: #FC3657; }
-    main .bloque-consulta .trucazo {
-      opacity: 0; }
   main .mapa {
     z-index: 1;
     position: relative; }
     main .mapa iframe {
       width: 100%; }
-  main .modal .btn-close {
-    background-color: white; }
-  main .modal-body {
-    text-align: center;
-    font-size: 1.5vw; }
-  main .modal .cerrar {
-    padding: 2% 0% 5% 0%;
-    display: flex;
-    justify-content: center; }
-    main .modal .cerrar .btn-ok {
-      border-color: #FF637D;
-      background-color: #FF637D; }
 
-header .menu-desktop {
+/*
+@keyframes cards_seccion {
+    0% { transform: translateY(-2px); }
+    25% { transform: translateY(-4px); }
+    50% { transform: translateY(-6px); }
+    75% { transform: translateY(-8px); }
+    100% { transform: translateY(-10px); }
+}
+*/
+header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #f8f8f8; }
-  @media screen and (max-width: 750px) {
-    header .menu-desktop {
-      display: none; } }
-  header .menu-desktop nav {
-    margin-left: -25%;
-    width: 50%;
+  header nav {
+    width: 30vw;
     align-self: center;
-    padding: 0% 0% 0.1% 0%; }
-    header .menu-desktop nav a {
-      font-size: 1.5vw;
-      font-weight: 600;
+    margin-left: -13%; }
+    header nav a {
+      font-size: 120%;
       color: #272727;
       margin: 0% 2%;
       display: inline-block;
@@ -557,67 +296,40 @@ header .menu-desktop {
       background-repeat: no-repeat;
       transition: background-size 0.3s, background-position 0s 0.3s;
       background-image: linear-gradient(#FC3657, #FC3657) !important; }
-      header .menu-desktop nav a:hover {
+      header nav a:hover {
         background-position: 100% 100%;
         background-size: 100% 2px;
         color: black; }
-      @media screen and (max-width: 1000px) {
-        header .menu-desktop nav a {
-          font-size: 1.7vw; } }
-  header .menu-desktop .a-logo {
-    align-self: center;
-    padding: 0.5% 0% 0.5% 3%; }
-    header .menu-desktop .a-logo .logo {
+  header .a-logo {
+    margin-left: -6%;
+    padding-top: 0.7%; }
+    header .a-logo .logo {
+      height: 11vh; }
+  header .a-cart {
+    padding-top: 1.5rem;
+    margin-right: -5%; }
+    header .a-cart .icono-cart {
+      height: 7vh; }
+  header .buscador {
+    padding-top: 1.5%;
+    margin-right: -7%;
+    display: flex; }
+    header .buscador input {
+      border-color: lightgray;
+      align-self: baseline;
+      height: 0.5%;
+      width: 20vw;
+      margin: 0% 5%; }
+    header .buscador button {
+      align-self: baseline;
+      border-color: #FF637D;
+      color: #FF637D;
+      margin: 1% 3%;
+      height: 6vh;
       width: 5vw; }
-  header .menu-desktop .a-cart {
-    color: black;
-    align-self: center;
-    padding: 0% 2% 0% 5%; }
-    header .menu-desktop .a-cart .icono-cart {
-      height: 100%;
-      width: 2.2vw; }
-
-header .menu-mobile {
-  display: none; }
-  @media screen and (max-width: 750px) {
-    header .menu-mobile {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f8f8f8; }
-      header .menu-mobile .a-logo {
-        align-self: center;
-        padding: 0.5% 0% 0.5% 3%; }
-        header .menu-mobile .a-logo .logo {
-          width: 10vw; }
-      header .menu-mobile .mobile-div {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 2%;
-        width: 50%; }
-        header .menu-mobile .mobile-div .a-cart {
-          color: black;
-          align-self: center;
-          margin: 0% 4%; }
-        header .menu-mobile .mobile-div .dropdown {
-          margin-top: 1%; } }
-  @media screen and (max-width: 600px) {
-    header .menu-mobile .a-logo .logo {
-      width: 12vw; } }
-  @media screen and (max-width: 500px) {
-    header .menu-mobile .a-logo .logo {
-      width: 13vw; } }
-  @media screen and (max-width: 400px) {
-    header .menu-mobile .a-logo .logo {
-      width: 14vw; } }
-  @media screen and (max-width: 350px) {
-    header .menu-mobile .a-logo .logo {
-      width: 15vw; } }
-
-@media screen and (max-width: 750px) {
-  .menu-desktop {
-    display: none; } }
+      header .buscador button:hover {
+        border-color: #FC3657;
+        color: #FC3657; }
 
 footer {
   display: flex;
@@ -669,7 +381,7 @@ footer {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -706,30 +418,54 @@ footer {
     .nosotros .quienes-somos_div_p {
       padding-left: 12%;
       width: 50%; }
-      .nosotros .quienes-somos_div_p p:nth-child(2) {
-        padding-top: 2%; }
+
+.nosotros .texto-manos {
+  margin: 0% 27%; }
+  .nosotros .texto-manos p {
+    padding: 2% 0%; }
+  .nosotros .texto-manos .manos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 2%; }
+    .nosotros .texto-manos .manos div {
+      padding: 5% 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .nosotros .texto-manos .manos div img {
+        width: 4vw;
+        padding-right: 10%; }
+      .nosotros .texto-manos .manos div h3 {
+        font-size: 130%;
+        font-weight: 900; }
 
 .nosotros .growpies-academy {
   display: flex;
   flex-direction: column;
   padding-top: 8%; }
-  .nosotros .growpies-academy h2 {
-    text-align: center;
-    font-weight: 900;
-    padding-bottom: 4%;
-    font-size: 190%;
-    color: #FF637D;
-    font-size: 160%;
-    color: black; }
   .nosotros .growpies-academy_div {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: center;
+    align-items: center; }
     .nosotros .growpies-academy_div img {
       width: 35vw; }
+    .nosotros .growpies-academy_div h3 {
+      font-size: 150%;
+      font-weight: 900;
+      padding-bottom: 5%; }
     .nosotros .growpies-academy_div_p {
       width: 40%; }
-      .nosotros .growpies-academy_div_p p:nth-child(2) {
-        padding-top: 2%; }
+
+.nosotros .cursos-online div div {
+  padding-left: 0%;
+  padding-right: 10%; }
+
+.nosotros .cursos-online div img {
+  width: 35vw; }
+
+.nosotros .cursos-online div_p {
+  width: 40%; }
 
 .nosotros .integrantes {
   display: flex;
@@ -747,7 +483,8 @@ footer {
   .nosotros .integrantes_div {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-bottom: 10%; }
     .nosotros .integrantes_div_integrante {
       display: flex;
       flex-direction: column;
@@ -761,6 +498,7 @@ footer {
       .nosotros .integrantes_div_integrante img {
         width: 25vw; }
       .nosotros .integrantes_div_integrante p {
+        text-align: center;
         padding: 1% 5%; }
 
 .nosotros .boton-cursos {
