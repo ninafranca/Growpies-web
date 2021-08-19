@@ -35,19 +35,33 @@ footer {
         div {
             padding-top: 15%;
             display: flex;
-            align-items: flex-end;
+            align-items: baseline;
             &:nth-child(1) {
+                display: flex;
+                justify-content: flex-start;
                 a {
-                    padding-left: 4%;
-                    img {
-                        height: 4vh;
+                    padding-left: 7%;
+                    color: black;
+                    font-size: 170%;
+                    &:hover {
+                        color: $color-rojo-claro;
                     }
+                }
+                p {
+                    font-size: 100%;
                 }
             }
             &:nth-child(2) {
-                padding: 7% 0%;
-                img {
-                    height: 5.5vh;
+                padding: 7% 0% 7% 4%;
+                a {
+                    color: black;
+                    font-size: 160%;
+                    &:hover {
+                        color: $color-rojo-claro;
+                    }
+                }
+                p {
+                    font-size: 100%;
                 }
             }
             a {
@@ -91,6 +105,22 @@ footer {
         .footer-redes {
             div {
                 padding-top: 0%;
+                &:nth-child(1) {
+                    a {
+                        padding-left: 3%;
+                        font-size: 110%;
+                    }
+                }
+                &:nth-child(2) {
+                    padding: 7% 0% 7% 4%;
+                    a {
+                        color: black;
+                        font-size: 110%;
+                    }
+                }
+                a {
+                    padding-right: 10%;
+                }
             }
         }
         .footer-top {
