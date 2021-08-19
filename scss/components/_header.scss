@@ -1,55 +1,113 @@
 header {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(248, 248, 248);
-    nav {
-        width: 30vw;
-        align-self: center;
-        margin-left: -13%;
-        a {
-            font-size: 120%;
-            color: $color-negro;
-            margin: 0% 2%;
-            @include underline-izq-a-der;
-            background-image: linear-gradient($color-rojo, $color-rojo) !important;
+
+    .menu-desktop {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(248, 248, 248);
+        @media screen and (max-width: 750px) {
+            display: none;
         }
-    }
-    .a-logo {
-        margin-left: -6%;
-        padding-top: 0.7%;
-        .logo {
-            height: 11vh;
-        }
-    }
-    .a-cart {
-        padding-top: 1.5rem;
-        margin-right: -5%;
-        .icono-cart {
-            height: 7vh;
-        }
-    }
-    .buscador {
-        padding-top: 1.5%;
-        margin-right: -7%;
-        display: flex; 
-        input {
-            border-color: rgb(211, 211, 211);
-            align-self: baseline;
-            height: 0.5%;
-            width: 20vw;
-            margin: 0% 5%;
-        }
-        button {
-            align-self: baseline;
-            border-color: #FF637D;
-            color: #FF637D;
-            margin: 1% 3%;
-            height: 6vh;
-            width: 5vw;
-            &:hover {
-                border-color: $color-rojo;
-                color: $color-rojo;
+        nav {
+            margin-left: -25%;
+            width: 50%;
+            align-self: center;
+            padding: 0% 0% 0.1% 0%;
+            a {
+                font-size: 1.5vw;
+                font-weight: 600;
+                color: $color-negro;
+                margin: 0% 2%;
+                @include underline-izq-a-der;
+                background-image: linear-gradient($color-rojo, $color-rojo) !important;
+                @media screen and (max-width: 1000px) {
+                    font-size: 1.7vw;
+                }
             }
         }
+        .a-logo {
+            align-self: center;
+            padding: 0.5% 0% 0.5% 3%;
+            .logo {
+                width: 5vw;
+            }
+        }
+        .a-cart {
+            color: black;
+            align-self: center;
+            padding: 0% 2% 0% 5%;
+            .icono-cart {
+                height: 100%;
+                width: 2.2vw;
+            }
+        }
+    }
+
+    .menu-mobile {
+        display: none;
+        @media screen and (max-width: 750px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(248, 248, 248);
+            .a-logo {
+                align-self: center;
+                padding: 0.5% 0% 0.5% 3%;
+                .logo {
+                    width: 10vw;
+                }
+            }
+            .mobile-div {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 2%;
+                width: 50%;
+                .a-cart {
+                    color: black;
+                    align-self: center;
+                    margin: 0% 4%;
+                }
+                .dropdown {
+                    margin-top: 1%;
+                }
+                a {
+                    color: $color-negro;
+                }
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .a-logo {
+                .logo {
+                    width: 12vw;
+                }
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .a-logo {
+                .logo {
+                    width: 13vw;
+                }
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .a-logo {
+                .logo {
+                    width: 14vw;
+                }
+            }
+        }
+        @media screen and (max-width: 350px) {
+            .a-logo {
+                .logo {
+                    width: 15vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu-desktop {
+        display: none;
     }
 }
