@@ -424,6 +424,12 @@ main {
           padding: 0% 0%; }
         main .index-secciones_cards .index-secciones_card div p {
           width: 37vw; } }
+    @media screen and (max-width: 1100px) {
+      main .index-secciones_cards .index-secciones_card img {
+        width: 50%;
+        padding: 0% 0%; }
+      main .index-secciones_cards .index-secciones_card div p {
+        width: 37vw; } }
     @media screen and (max-width: 1000px) {
       main .index-secciones {
         margin-top: 60%; } }
@@ -940,6 +946,55 @@ footer {
   footer .copyright {
     text-align: center;
     padding-bottom: 2%; }
+
+.footer-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer-mobile .footer-logo img {
+    width: 20vw; }
+  .footer-mobile .footer-top {
+    text-align: start;
+    padding: 2% 0% 4% 0%;
+    display: flex;
+    align-items: flex-start; }
+    .footer-mobile .footer-top .footer-info {
+      margin-left: -40%;
+      text-align: start; }
+    .footer-mobile .footer-top .footer-redes {
+      margin-right: -40%;
+      align-items: flex-start; }
+  @media screen and (max-width: 749px) {
+    .footer-mobile {
+      font-size: 100%; }
+      .footer-mobile .footer-redes div {
+        padding-top: 0%; }
+      .footer-mobile .footer-top .footer-info {
+        margin-left: -50%; }
+        .footer-mobile .footer-top .footer-info a > p {
+          padding-top: 15%; }
+      .footer-mobile .footer-top .footer-redes {
+        margin-right: -50%; } }
+  @media screen and (max-width: 500px) {
+    .footer-mobile {
+      font-size: 85%; }
+      .footer-mobile .footer-logo img {
+        width: 25vw; } }
+  @media screen and (max-width: 400px) {
+    .footer-mobile {
+      font-size: 80%; }
+      .footer-mobile .footer-top .footer-info {
+        margin-left: -20%; }
+      .footer-mobile .footer-top .footer-redes {
+        margin-right: -20%; } }
+
+@media screen and (min-width: 751px) {
+  .footer-mobile {
+    display: none; } }
+
+@media screen and (max-width: 750px) {
+  .footer-desktop {
+    display: none; } }
 
 .nosotros .banner {
   background-image: url(../../assets/nosotros.png);
