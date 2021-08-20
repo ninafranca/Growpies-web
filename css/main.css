@@ -913,7 +913,7 @@ footer {
     padding: 0% 0% 2% 5%; }
     footer .footer-logo img {
       padding-top: 10%;
-      width: 10vw; }
+      width: 15vw; }
   footer .footer-info {
     text-align: center;
     padding-right: 3%; }
@@ -932,15 +932,27 @@ footer {
     footer .footer-redes div {
       padding-top: 15%;
       display: flex;
-      align-items: flex-end; }
-      footer .footer-redes div:nth-child(1) a {
-        padding-left: 4%; }
-        footer .footer-redes div:nth-child(1) a img {
-          height: 4vh; }
+      align-items: baseline; }
+      footer .footer-redes div:nth-child(1) {
+        display: flex;
+        justify-content: flex-start; }
+        footer .footer-redes div:nth-child(1) a {
+          padding-left: 7%;
+          color: black;
+          font-size: 170%; }
+          footer .footer-redes div:nth-child(1) a:hover {
+            color: #FF637D; }
+        footer .footer-redes div:nth-child(1) p {
+          font-size: 100%; }
       footer .footer-redes div:nth-child(2) {
-        padding: 7% 0%; }
-        footer .footer-redes div:nth-child(2) img {
-          height: 5.5vh; }
+        padding: 7% 0% 7% 4%; }
+        footer .footer-redes div:nth-child(2) a {
+          color: black;
+          font-size: 160%; }
+          footer .footer-redes div:nth-child(2) a:hover {
+            color: #FF637D; }
+        footer .footer-redes div:nth-child(2) p {
+          font-size: 100%; }
       footer .footer-redes div a {
         padding-right: 10%; }
   footer .copyright {
@@ -969,6 +981,16 @@ footer {
       font-size: 100%; }
       .footer-mobile .footer-redes div {
         padding-top: 0%; }
+        .footer-mobile .footer-redes div:nth-child(1) a {
+          padding-left: 3%;
+          font-size: 110%; }
+        .footer-mobile .footer-redes div:nth-child(2) {
+          padding: 7% 0% 7% 4%; }
+          .footer-mobile .footer-redes div:nth-child(2) a {
+            color: black;
+            font-size: 110%; }
+        .footer-mobile .footer-redes div a {
+          padding-right: 10%; }
       .footer-mobile .footer-top .footer-info {
         margin-left: -50%; }
         .footer-mobile .footer-top .footer-info a > p {
@@ -1016,6 +1038,26 @@ footer {
     font-size: 125%;
     font-weight: 300;
     color: #FFFFFF; }
+  @media screen and (max-width: 1000px) {
+    .nosotros .banner h1 {
+      font-size: 400%; }
+    .nosotros .banner p {
+      font-size: 115%; } }
+  @media screen and (max-width: 750px) {
+    .nosotros .banner h1 {
+      font-size: 300%; }
+    .nosotros .banner p {
+      font-size: 105%; } }
+  @media screen and (max-width: 500px) {
+    .nosotros .banner h1 {
+      font-size: 280%; }
+    .nosotros .banner p {
+      font-size: 90%; } }
+  @media screen and (max-width: 400px) {
+    .nosotros .banner h1 {
+      font-size: 230%; }
+    .nosotros .banner p {
+      font-size: 80%; } }
 
 .nosotros .quienes-somos {
   display: flex;
@@ -1043,6 +1085,8 @@ footer {
   margin: 0% 27%; }
   .nosotros .texto-manos p {
     padding: 2% 0%; }
+    .nosotros .texto-manos p span {
+      font-weight: 800; }
   .nosotros .texto-manos .manos {
     display: flex;
     align-items: center;
@@ -1054,11 +1098,51 @@ footer {
       justify-content: center;
       align-items: center; }
       .nosotros .texto-manos .manos div img {
-        width: 4vw;
+        width: 4.5vw;
         padding-right: 10%; }
       .nosotros .texto-manos .manos div h3 {
-        font-size: 130%;
+        font-size: 150%;
         font-weight: 900; }
+  @media screen and (max-width: 1300px) {
+    .nosotros .texto-manos .manos div img {
+      width: 5vw; }
+    .nosotros .texto-manos .manos div h3 {
+      font-size: 140%; } }
+  @media screen and (max-width: 1100px) {
+    .nosotros .texto-manos {
+      margin: 0% 22%; } }
+  @media screen and (max-width: 900px) {
+    .nosotros .texto-manos {
+      margin: 0% 17%; } }
+  @media screen and (max-width: 750px) {
+    .nosotros .texto-manos {
+      margin: 0% 12%; }
+      .nosotros .texto-manos .manos {
+        flex-direction: column; }
+        .nosotros .texto-manos .manos div {
+          padding: 2% 0%; }
+          .nosotros .texto-manos .manos div:nth-child(1) {
+            align-self: flex-start; }
+          .nosotros .texto-manos .manos div:nth-child(3) {
+            align-self: flex-end; }
+          .nosotros .texto-manos .manos div img {
+            width: 8vw; } }
+  @media screen and (max-width: 500px) {
+    .nosotros .texto-manos {
+      margin: 0% 10%; }
+      .nosotros .texto-manos .manos div {
+        padding: 4% 0%; }
+        .nosotros .texto-manos .manos div:nth-child(1) {
+          margin-left: -10%; }
+        .nosotros .texto-manos .manos div:nth-child(3) {
+          margin-right: -10%; }
+        .nosotros .texto-manos .manos div img {
+          width: 10vw; } }
+  @media screen and (max-width: 400px) {
+    .nosotros .texto-manos {
+      margin: 0% 8%; }
+      .nosotros .texto-manos .manos div img {
+        width: 12vw; } }
 
 .nosotros .growpies-academy {
   display: flex;
@@ -1087,10 +1171,55 @@ footer {
 .nosotros .cursos-online div_p {
   width: 40%; }
 
+.nosotros .expertos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%; }
+  .nosotros .expertos h2 {
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 4%;
+    font-size: 190%;
+    color: #FF637D;
+    color: black;
+    font-size: 160%; }
+  .nosotros .expertos_p {
+    align-self: center;
+    width: 45vw;
+    padding-bottom: 5%; }
+    .nosotros .expertos_p span {
+      font-weight: 800; }
+  .nosotros .expertos_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 5%; }
+    .nosotros .expertos_div_integrante {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 25%; }
+      .nosotros .expertos_div_integrante h3 {
+        font-size: 150%;
+        font-weight: 800;
+        text-align: center;
+        padding-top: 7%; }
+      .nosotros .expertos_div_integrante img {
+        width: 20vw; }
+      .nosotros .expertos_div_integrante p {
+        text-align: center;
+        padding: 5% 5%; }
+  @media screen and (max-width: 750px) {
+    .nosotros .expertos .expertos_div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
 .nosotros .integrantes {
   display: flex;
   flex-direction: column;
-  padding-top: 8%;
   padding-bottom: 5%; }
   .nosotros .integrantes h2 {
     text-align: center;
@@ -1109,6 +1238,7 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       width: 25%; }
       .nosotros .integrantes_div_integrante h3 {
         font-size: 150%;
@@ -1120,6 +1250,12 @@ footer {
       .nosotros .integrantes_div_integrante p {
         text-align: center;
         padding: 1% 5%; }
+  @media screen and (max-width: 750px) {
+    .nosotros .integrantes .integrantes_div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .nosotros .boton-cursos {
   background-color: #EAF2E3;
@@ -1169,6 +1305,41 @@ footer {
     .nosotros .boton-cursos .boton:hover {
       border-color: #FBC72E;
       background-color: #FBC72E; }
+
+.blobs-mobile .growpies-academy_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .blobs-mobile .growpies-academy_div img {
+    width: 35vw; }
+  .blobs-mobile .growpies-academy_div h3 {
+    font-size: 150%;
+    font-weight: 900;
+    padding-bottom: 5%; }
+  .blobs-mobile .growpies-academy_div .quienes-somos_div_p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0%; }
+
+.blobs-mobile .cursos-online div div {
+  padding: 0%; }
+
+.blobs-mobile .cursos-online div img {
+  width: 35vw; }
+
+.blobs-mobile .cursos-online div_p {
+  width: 40%; }
+
+@media screen and (min-width: 751px) {
+  .blobs-mobile {
+    display: none; } }
+
+@media screen and (max-width: 750px) {
+  .blobs-desktop {
+    display: none; } }
 
 * {
   font-family: "Nunito", sans-serif; }
