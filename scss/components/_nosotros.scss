@@ -243,11 +243,12 @@
                 width: 25%;
                 h3 {
                     font-size: 150%;
-                    font-weight: 800;
+                    font-weight: 900;
                     text-align: center;
-                    padding-top: 7%;
+                    padding: 5% 0%;
                 }
                 img {
+                    padding-bottom: 5%;
                     width: 20vw;
                 }
                 p {
@@ -258,11 +259,30 @@
         }
         // @MEDIAS .EXPERTOS
         @media screen and (max-width: 750px) {
+            padding-top: 20%;
+            .expertos_p {
+                width: 80vw;
+            }
             .expertos_div {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                &_integrante {
+                    padding: 2% 0%;
+                    img {
+                        width: 45vw;
+                    }
+                    h3 {
+                        font-size: 130%;
+                        padding-top: 7%;
+                        width: 100vw;
+                    }
+                    p {
+                        padding: 5% 0%;
+                        width: 100vw;
+                    }
+                }
             }
         }
     }
@@ -290,7 +310,7 @@
                 width: 25%;
                 h3 {
                     font-size: 150%;
-                    font-weight: 800;
+                    font-weight: 900;
                     text-align: center;
                     padding: 7% 0%;
                 }
@@ -303,13 +323,29 @@
                 }
             }
         }
-        // @MEDIAS .EXPERTOS
+        // @MEDIAS .INTEGRANTES
         @media screen and (max-width: 750px) {
+            padding-top: 10%;
             .integrantes_div {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                &_integrante {
+                    padding: 2% 0% 10% 0%;
+                    img {
+                        width: 70vw;
+                    }
+                    h3 {
+                        padding: 20% 0%;
+                        font-size: 130%;
+                        width: 100vw;
+                    }
+                    p {
+                        padding: 5% 0%;
+                        width: 100vw;
+                    }
+                }
             }
         }
     }
@@ -342,7 +378,7 @@
                 .carousel-item {
                     width: 45vw;
                     height: 50vh;
-                    background-image: url("../../assets/opiniones.png");
+                    background-image: url("../../assets/comentarios-desktop.jpg");
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -368,6 +404,114 @@
                 background-color: $color-amarillo;
             }
         }
+        // @MEDIAS .BOTON-CURSOS
+        @media screen and (max-width: 1100px) {
+            p {
+                text-align: center;
+                width: 50%;
+                margin-top: -1%;
+                padding-bottom: 5%;
+                width: 85%;
+            }
+            .carousel {
+                width: 60vw;
+                height: 60vh;
+                &-inner {
+                    .carousel-item {
+                        width: 60vw;
+                        height: 60vh;
+                    }       
+                }
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            .carousel {
+                width: 60vw;
+                height: 55vh;
+                &-inner {
+                    .carousel-item {
+                        width: 60vw;
+                        height: 55vh;
+                    }       
+                }
+            }
+        }
+        @media screen and (max-width: 900px) {
+            .carousel {
+                width: 60vw;
+                height: 50vh;
+                &-inner {
+                    .carousel-item {
+                        width: 60vw;
+                        height: 50vh;
+                    }       
+                }
+            }
+        }
+        @media screen and (max-width: 850px) {
+            .carousel {
+                width: 65vw;
+                height: 50vh;
+                &-inner {
+                    .carousel-item {
+                        width: 65vw;
+                        height: 50vh;
+                    }       
+                }
+            }
+        }
+        @media screen and (max-width: 750px) {
+            .carousel {
+                width: 70vw;
+                height: 60vh;
+                &-inner {
+                    .carousel-item {
+                        width: 70vw;
+                        height: 60vh;
+                        background-image: url("../../assets/comentarios-movil.jpg");
+                    }       
+                }
+            }
+            .boton {
+                margin-top: 10%;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            .carousel {
+                width: 75vw;
+                height: 60vh;
+                &-inner {
+                    .carousel-item {
+                        width: 75vw;
+                        height: 60vh;
+                    }       
+                }
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .carousel {
+                width: 85vw;
+                height: 60vh;
+                &-inner {
+                    .carousel-item {
+                        width: 85vw;
+                        height: 60vh;
+                    }       
+                }
+            }
+        }
+        @media screen and (max-width: 350px) {
+            .carousel {
+                width: 85vw;
+                height: 50vh;
+                &-inner {
+                    .carousel-item {
+                        width: 85vw;
+                        height: 50vh;
+                    }       
+                }
+            }
+        }
     }
 }
 
@@ -378,12 +522,12 @@
         align-items: center;
         justify-content: center;
         img {
-            width: 35vw;
+            width: 55vw;
         }
         h3 {
             font-size: 150%;
             font-weight: 900;
-            padding-bottom: 5%;
+            padding: 10% 0%;
         }
         .quienes-somos_div_p {
             display: flex;
@@ -391,6 +535,7 @@
             flex-direction: column;
             align-items: center;
             padding-left: 0%;
+            width: 80%;
         }
     }
     .cursos-online {
@@ -399,10 +544,18 @@
                 padding: 0%;
             }
             img {
-                width: 35vw;
+                width: 55vw;
             }
             &_p {
-                width: 40%;
+                width: 55%;
+            }
+        }
+    }
+    // @MEDIAS .BLOBS-MOBILE
+    @media screen and (max-width: 400px) {
+        .growpies-academy_div {
+            img {
+                width: 70vw;
             }
         }
     }
