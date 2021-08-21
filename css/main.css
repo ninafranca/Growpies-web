@@ -1022,6 +1022,7 @@ footer {
   background-image: url(../../assets/nosotros.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1044,20 +1045,48 @@ footer {
     .nosotros .banner p {
       font-size: 115%; } }
   @media screen and (max-width: 750px) {
-    .nosotros .banner h1 {
-      font-size: 300%; }
-    .nosotros .banner p {
-      font-size: 105%; } }
+    .nosotros .banner {
+      background-size: contain;
+      background-position: top;
+      margin-bottom: -25%; }
+      .nosotros .banner h1 {
+        font-size: 300%; }
+      .nosotros .banner p {
+        font-size: 105%; } }
+  @media screen and (max-width: 650px) {
+    .nosotros .banner {
+      margin-bottom: -35%; } }
+  @media screen and (max-width: 550px) {
+    .nosotros .banner {
+      margin-bottom: -50%; } }
   @media screen and (max-width: 500px) {
-    .nosotros .banner h1 {
-      font-size: 280%; }
-    .nosotros .banner p {
-      font-size: 90%; } }
+    .nosotros .banner {
+      margin-bottom: -60%; }
+      .nosotros .banner h1 {
+        font-size: 280%; }
+      .nosotros .banner p {
+        font-size: 90%; } }
+  @media screen and (max-width: 450px) {
+    .nosotros .banner {
+      margin-bottom: -70%; } }
   @media screen and (max-width: 400px) {
-    .nosotros .banner h1 {
-      font-size: 230%; }
-    .nosotros .banner p {
-      font-size: 80%; } }
+    .nosotros .banner {
+      margin-bottom: -90%; }
+      .nosotros .banner h1 {
+        padding-top: 0%;
+        font-size: 210%; }
+      .nosotros .banner p {
+        font-size: 90%; } }
+  @media screen and (max-width: 350px) {
+    .nosotros .banner {
+      margin-bottom: -100%; }
+      .nosotros .banner h1 {
+        font-size: 190%; }
+      .nosotros .banner p {
+        font-size: 80%; } }
+  @media screen and (max-width: 330px) {
+    .nosotros .banner {
+      margin-bottom: -115%; } }
 
 .nosotros .quienes-somos {
   display: flex;
@@ -1080,6 +1109,9 @@ footer {
     .nosotros .quienes-somos_div_p {
       padding-left: 12%;
       width: 50%; }
+  @media screen and (max-width: 750px) {
+    .nosotros .quienes-somos h2 {
+      font-size: 160%; } }
 
 .nosotros .texto-manos {
   margin: 0% 27%; }
