@@ -1026,8 +1026,9 @@ footer {
   background-image: url(../../assets/nosotros.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1042,6 +1043,54 @@ footer {
     font-size: 125%;
     font-weight: 300;
     color: #FFFFFF; }
+  @media screen and (max-width: 1000px) {
+    .nosotros .banner h1 {
+      font-size: 400%; }
+    .nosotros .banner p {
+      font-size: 115%; } }
+  @media screen and (max-width: 750px) {
+    .nosotros .banner {
+      background-size: contain;
+      background-position: top;
+      margin-bottom: -50%; }
+      .nosotros .banner h1 {
+        font-size: 300%; }
+      .nosotros .banner p {
+        font-size: 105%; } }
+  @media screen and (max-width: 650px) {
+    .nosotros .banner {
+      margin-bottom: -65%; } }
+  @media screen and (max-width: 550px) {
+    .nosotros .banner {
+      margin-bottom: -90%; } }
+  @media screen and (max-width: 500px) {
+    .nosotros .banner {
+      margin-bottom: -100%; }
+      .nosotros .banner h1 {
+        font-size: 280%; }
+      .nosotros .banner p {
+        font-size: 90%; } }
+  @media screen and (max-width: 450px) {
+    .nosotros .banner {
+      margin-bottom: -110%; } }
+  @media screen and (max-width: 400px) {
+    .nosotros .banner {
+      margin-bottom: -140%; }
+      .nosotros .banner h1 {
+        padding-top: 0%;
+        font-size: 210%; }
+      .nosotros .banner p {
+        font-size: 90%; } }
+  @media screen and (max-width: 350px) {
+    .nosotros .banner {
+      margin-bottom: -160%; }
+      .nosotros .banner h1 {
+        font-size: 190%; }
+      .nosotros .banner p {
+        font-size: 80%; } }
+  @media screen and (max-width: 330px) {
+    .nosotros .banner {
+      margin-bottom: -170%; } }
 
 .nosotros .quienes-somos {
   display: flex;
@@ -1064,35 +1113,165 @@ footer {
     .nosotros .quienes-somos_div_p {
       padding-left: 12%;
       width: 50%; }
-      .nosotros .quienes-somos_div_p p:nth-child(2) {
-        padding-top: 2%; }
+  @media screen and (max-width: 750px) {
+    .nosotros .quienes-somos h2 {
+      font-size: 160%; } }
+
+.nosotros .texto-manos {
+  margin: 0% 27%; }
+  .nosotros .texto-manos p {
+    padding: 2% 0%; }
+    .nosotros .texto-manos p span {
+      font-weight: 800; }
+  .nosotros .texto-manos .manos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 2%; }
+    .nosotros .texto-manos .manos div {
+      padding: 5% 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .nosotros .texto-manos .manos div img {
+        width: 4.5vw;
+        padding-right: 10%; }
+      .nosotros .texto-manos .manos div h3 {
+        font-size: 150%;
+        font-weight: 900; }
+  @media screen and (max-width: 1300px) {
+    .nosotros .texto-manos .manos div img {
+      width: 5vw; }
+    .nosotros .texto-manos .manos div h3 {
+      font-size: 140%; } }
+  @media screen and (max-width: 1100px) {
+    .nosotros .texto-manos {
+      margin: 0% 22%; } }
+  @media screen and (max-width: 900px) {
+    .nosotros .texto-manos {
+      margin: 0% 17%; } }
+  @media screen and (max-width: 750px) {
+    .nosotros .texto-manos {
+      margin: 0% 12%; }
+      .nosotros .texto-manos .manos {
+        flex-direction: column; }
+        .nosotros .texto-manos .manos div {
+          padding: 2% 0%; }
+          .nosotros .texto-manos .manos div:nth-child(1) {
+            align-self: flex-start; }
+          .nosotros .texto-manos .manos div:nth-child(3) {
+            align-self: flex-end; }
+          .nosotros .texto-manos .manos div img {
+            width: 8vw; } }
+  @media screen and (max-width: 500px) {
+    .nosotros .texto-manos {
+      margin: 0% 10%; }
+      .nosotros .texto-manos .manos div {
+        padding: 4% 0%; }
+        .nosotros .texto-manos .manos div:nth-child(1) {
+          margin-left: -10%; }
+        .nosotros .texto-manos .manos div:nth-child(3) {
+          margin-right: -10%; }
+        .nosotros .texto-manos .manos div img {
+          width: 10vw; } }
+  @media screen and (max-width: 400px) {
+    .nosotros .texto-manos {
+      margin: 0% 8%; }
+      .nosotros .texto-manos .manos div img {
+        width: 12vw; } }
 
 .nosotros .growpies-academy {
   display: flex;
   flex-direction: column;
   padding-top: 8%; }
-  .nosotros .growpies-academy h2 {
+  .nosotros .growpies-academy_div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nosotros .growpies-academy_div img {
+      width: 35vw; }
+    .nosotros .growpies-academy_div h3 {
+      font-size: 150%;
+      font-weight: 900;
+      padding-bottom: 5%; }
+    .nosotros .growpies-academy_div_p {
+      width: 40%; }
+
+.nosotros .cursos-online div div {
+  padding-left: 2%;
+  padding-right: 10%; }
+
+.nosotros .cursos-online div img {
+  width: 35vw; }
+
+.nosotros .cursos-online div_p {
+  width: 40%; }
+
+.nosotros .expertos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%; }
+  .nosotros .expertos h2 {
     text-align: center;
     font-weight: 900;
     padding-bottom: 4%;
     font-size: 190%;
     color: #FF637D;
-    font-size: 160%;
-    color: black; }
-  .nosotros .growpies-academy_div {
+    color: black;
+    font-size: 160%; }
+  .nosotros .expertos_p {
+    align-self: center;
+    width: 45vw;
+    padding-bottom: 5%; }
+    .nosotros .expertos_p span {
+      font-weight: 800; }
+  .nosotros .expertos_div {
     display: flex;
-    justify-content: space-evenly; }
-    .nosotros .growpies-academy_div img {
-      width: 35vw; }
-    .nosotros .growpies-academy_div_p {
-      width: 40%; }
-      .nosotros .growpies-academy_div_p p:nth-child(2) {
-        padding-top: 2%; }
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 5%; }
+    .nosotros .expertos_div_integrante {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 25%; }
+      .nosotros .expertos_div_integrante h3 {
+        font-size: 150%;
+        font-weight: 900;
+        text-align: center;
+        padding: 5% 0%; }
+      .nosotros .expertos_div_integrante img {
+        padding-bottom: 5%;
+        width: 20vw; }
+      .nosotros .expertos_div_integrante p {
+        text-align: center;
+        padding: 5% 5%; }
+  @media screen and (max-width: 750px) {
+    .nosotros .expertos {
+      padding-top: 20%; }
+      .nosotros .expertos .expertos_p {
+        width: 80vw; }
+      .nosotros .expertos .expertos_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .nosotros .expertos .expertos_div_integrante {
+          padding: 2% 0%; }
+          .nosotros .expertos .expertos_div_integrante img {
+            width: 45vw; }
+          .nosotros .expertos .expertos_div_integrante h3 {
+            font-size: 130%;
+            padding-top: 7%;
+            width: 100vw; }
+          .nosotros .expertos .expertos_div_integrante p {
+            padding: 5% 0%;
+            width: 100vw; } }
 
 .nosotros .integrantes {
   display: flex;
   flex-direction: column;
-  padding-top: 8%;
   padding-bottom: 5%; }
   .nosotros .integrantes h2 {
     text-align: center;
@@ -1105,21 +1284,43 @@ footer {
   .nosotros .integrantes_div {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-bottom: 10%; }
     .nosotros .integrantes_div_integrante {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       width: 25%; }
       .nosotros .integrantes_div_integrante h3 {
         font-size: 150%;
-        font-weight: 800;
+        font-weight: 900;
         text-align: center;
         padding: 7% 0%; }
       .nosotros .integrantes_div_integrante img {
         width: 25vw; }
       .nosotros .integrantes_div_integrante p {
+        text-align: center;
         padding: 1% 5%; }
+  @media screen and (max-width: 750px) {
+    .nosotros .integrantes {
+      padding-top: 10%; }
+      .nosotros .integrantes .integrantes_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .nosotros .integrantes .integrantes_div_integrante {
+          padding: 2% 0% 10% 0%; }
+          .nosotros .integrantes .integrantes_div_integrante img {
+            width: 70vw; }
+          .nosotros .integrantes .integrantes_div_integrante h3 {
+            padding: 20% 0%;
+            font-size: 130%;
+            width: 100vw; }
+          .nosotros .integrantes .integrantes_div_integrante p {
+            padding: 5% 0%;
+            width: 100vw; } }
 
 .nosotros .boton-cursos {
   background-color: #EAF2E3;
@@ -1151,7 +1352,7 @@ footer {
       .nosotros .boton-cursos .carousel-inner .carousel-item {
         width: 45vw;
         height: 50vh;
-        background-image: url("../../assets/opiniones.png");
+        background-image: url("../../assets/comentarios-desktop.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -1169,6 +1370,111 @@ footer {
     .nosotros .boton-cursos .boton:hover {
       border-color: #FBC72E;
       background-color: #FBC72E; }
+  @media screen and (max-width: 1100px) {
+    .nosotros .boton-cursos p {
+      text-align: center;
+      width: 50%;
+      margin-top: -1%;
+      padding-bottom: 5%;
+      width: 85%; }
+    .nosotros .boton-cursos .carousel {
+      width: 60vw;
+      height: 60vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 60vw;
+        height: 60vh; } }
+  @media screen and (max-width: 1000px) {
+    .nosotros .boton-cursos .carousel {
+      width: 60vw;
+      height: 55vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 60vw;
+        height: 55vh; } }
+  @media screen and (max-width: 900px) {
+    .nosotros .boton-cursos .carousel {
+      width: 60vw;
+      height: 50vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 60vw;
+        height: 50vh; } }
+  @media screen and (max-width: 850px) {
+    .nosotros .boton-cursos .carousel {
+      width: 65vw;
+      height: 50vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 65vw;
+        height: 50vh; } }
+  @media screen and (max-width: 750px) {
+    .nosotros .boton-cursos .carousel {
+      width: 75vw;
+      height: 60vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 75vw;
+        height: 60vh;
+        background-image: url("../../assets/comentarios-movil.jpg"); }
+    .nosotros .boton-cursos .boton {
+      margin-top: 10%; } }
+  @media screen and (max-width: 450px) {
+    .nosotros .boton-cursos .carousel {
+      width: 85vw;
+      height: 55vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 85vw;
+        height: 55vh; } }
+  @media screen and (max-width: 400px) {
+    .nosotros .boton-cursos .carousel {
+      width: 85vw;
+      height: 45vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 85vw;
+        height: 45vh; } }
+  @media screen and (max-width: 350px) {
+    .nosotros .boton-cursos .carousel {
+      width: 85vw;
+      height: 40vh; }
+      .nosotros .boton-cursos .carousel-inner .carousel-item {
+        width: 85vw;
+        height: 40vh; } }
+
+.blobs-mobile .growpies-academy_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .blobs-mobile .growpies-academy_div img {
+    width: 55vw; }
+  .blobs-mobile .growpies-academy_div h3 {
+    font-size: 150%;
+    font-weight: 900;
+    padding: 10% 0%; }
+  .blobs-mobile .growpies-academy_div .quienes-somos_div_p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0%;
+    width: 80%; }
+
+.blobs-mobile .cursos-online div div {
+  padding: 0%; }
+
+.blobs-mobile .cursos-online div img {
+  width: 55vw; }
+
+.blobs-mobile .cursos-online div_p {
+  width: 55%; }
+
+@media screen and (max-width: 400px) {
+  .blobs-mobile .growpies-academy_div img {
+    width: 70vw; } }
+
+@media screen and (min-width: 751px) {
+  .blobs-mobile {
+    display: none; } }
+
+@media screen and (max-width: 750px) {
+  .blobs-desktop {
+    display: none; } }
 
 * {
   font-family: "Nunito", sans-serif; }
