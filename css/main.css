@@ -1038,7 +1038,7 @@ footer {
     font-size: 500%;
     font-weight: 900;
     color: #FF637D;
-    margin: 5% 0% 1% 0%; }
+    margin: 5% 0% 3% 0%; }
   .nosotros .banner p {
     font-size: 125%;
     font-weight: 300;
@@ -1367,9 +1367,13 @@ footer {
     background-color: #FFDC73;
     font-weight: 700;
     margin-top: 5%; }
+    .nosotros .boton-cursos .boton a {
+      color: black; }
     .nosotros .boton-cursos .boton:hover {
       border-color: #FBC72E;
       background-color: #FBC72E; }
+      .nosotros .boton-cursos .boton:hover a {
+        color: black; }
   @media screen and (max-width: 1100px) {
     .nosotros .boton-cursos p {
       text-align: center;
