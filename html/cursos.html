@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Growpies plataforma de aprendizaje continuo de educación especial">
+    <meta name="keywords" content="tea, autismo, sindrome de down, educacion especial">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/favi-growpies.png">
+    <title>Cursos en Growpies - Plataforma de aprendizaje continuo</title>
+</head>
+
+<body>
+
+    <header class="container-fluid mx-0 px-0" style="background-color: #FF637D; height: 15vh;"></header>
+
+    <main class="px-0">
+
+        <div class="banner px-0">
+            <img src="../assets/hero-cursos2-02.png" alt="">
+            <div class="banner-text col-md-5">
+                <p class="mainTitle">Cursos</p>
+                <h1 class="col-6">Nuestros cursos online de educación especial para todo público.</h1>
+            </div>
+
+        </div>
+
+        <div class="recomendados px-0">
+            <h2>Recomendados</h2>
+            <div class="carrusel-cards container">
+                <p class="arrow"> <i class="fas fa-chevron-circle-left"></i> </p>
+                <div class="contenedor-cards">
+                    <div class="card">
+                        <div class="img-container cursoUno">
+                            <img src="../assets/cursoTea.jpeg" class="card-img-top" alt="foto curso">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Introducción Al TEA: Importancia Del Autoconocimiento</h5>
+                            <p class="card-text">Destinado principalmente a profesionales de la atención
+                                temprana y la educación infantil.</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+                                <p class="card-price">€61</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card noDisponible">
+                        <div class="img-container">
+                            <img src="../assets/cursos2.jpeg" class="card-img-top" alt="foto curso">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">La necesidad de las rutinas, anticipación y seguridad.</h5>
+                            <p class="card-text pb-5">¡Próximamente!</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-disabled">AGREGAR AL CARRITO</a>
+                                <p class="card-price">€61</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card noDisponible">
+                        <div class="img-container">
+                            <img src="../assets/cursos.jpeg" class="card-img-top" alt="foto curso">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Alteraciones de conducta en Síndrome de Down
+                            </h5>
+                            <p class="card-text pb-5">¡Próximamente!</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-disabled">AGREGAR AL CARRITO</a>
+                                <p class="card-price">€61</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="arrow"> <i class="fas fa-chevron-circle-right"></i> </p>
+            </div>
+        </div>
+        <div class="videos col-12 px-0">
+            <h2>Nuestros Cursos</h2>
+            <div class="col-9 text-left filter-icon" onclick={collapseFilters()}>
+                <i class="fas fa-list-ul"></i>
+                <p>Filtros</p>
+            </div>
+            <div class="filters-container col-9" id="vid-filters-container">
+                <div class="filters col-md-4 col-12">
+                    <label for="video-category">Ordenar por categoría</label>
+                    <select name="" id="video-category" onchange="applyFilter()">
+                        <option value="Todos">Todos los Cursos</option>
+                        <option value="Disponibles">Sólo Cursos Disponibles</option>
+                    </select>
+                </div>
+                <div class="filters col-md-4 col-12">
+                    <label for="video-category">Ordenar por precio</label>
+                    <select name="" id="video-category">
+                        <option value="mayormenor">De mayor a menor</option>
+                        <option value="menormayor">De menor a mayor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="contenedor-videos col-9">
+                <div class="card vidCard">
+                    <div class="img-container">
+                        <img src="../assets/cursoTea.jpeg" class="card-img-top" alt="foto curso">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Introducción Al TEA: Importancia Del Autoconocimiento</h5>
+                        <p class="card-text">Destinado principalmente a profesionales de la atención
+                            temprana y la educación infantil.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn">AGREGAR AL CARRITO</a>
+                            <p class="card-price">€61</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card vidCard noDisponible">
+                    <div class="img-container">
+                        <img src="../assets/cursos2.jpeg" class="card-img-top" alt="foto curso">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">La necesidad de las rutinas, anticipación y seguridad.</h5>
+                        <p class="card-text pb-5">¡Próximamente!</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-disabled">AGREGAR AL CARRITO</a>
+                            <p class="card-price">€61</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card vidCard noDisponible">
+                    <div class="img-container">
+                        <img src="../assets/cursos.jpeg" class="card-img-top" alt="foto curso">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Curso sobre las alteraciones de conducta en Síndrome de Down</h5>
+                        <p class="card-text pb-5">¡Próximamente!</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-disabled">AGREGAR AL CARRITO</a>
+                            <p class="card-price">€61</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card vidCard noDisponible">
+                    <div class="img-container">
+                        <img src="../assets/cursoLectura.jpg" class="card-img-top" alt="foto curso">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Introducción a la lectura para niños con trastornos del lenguaje</h5>
+                        <p class="card-text pb-5">¡Próximamente!</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-disabled">AGREGAR AL CARRITO</a>
+                            <p class="card-price">€61</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clases-privadas container-fluid px-0">
+            <h2>Sesiones privadas</h2>
+            <p class="col-md-5 col-12">
+                ¿Tienes dudas o quieres profundizar tus conocimientos de
+                manera personalizada? Puedesreservar una clase
+                con alguno de nuestros profesores especializados.
+            </p>
+            <button class="reservar-btn"><a
+                    href="mailto:admin@growpies.es?body=Hola%20!%0A%0AMi%20NOMBRE%20es%3A%20_________%0A%0AEstoy%20interesado%20en%20reservar%20una%20sesi%C3%B3n%20privada%20con%20ustedes.%0A%0AAguardo%20m%C3%A1s%20informaci%C3%B3n.%0A%0ASaludos!&subject=Consulta%20sobre%20Sesiones%20Privadas">reservar
+                    una
+                    sesión</a></button>
+        </div>
+    </main>
+
+    <footer style="background-color: #FF637D; height: 30vh; width: 100vw;"></footer>
+
+    <script src="../js/cursos.js"></script>
+    <script src="https://kit.fontawesome.com/b53961aa0d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
