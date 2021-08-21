@@ -37,7 +37,7 @@
         @media screen and (max-width: 750px) {
             background-size: contain;
             background-position: top;
-            margin-bottom: -50%;
+            margin-bottom: -25%;
             h1 {
                 font-size: 300%;
             }
@@ -46,13 +46,13 @@
             }
         }
         @media screen and (max-width: 650px) {
-            margin-bottom: -65%;
+            margin-bottom: -35%;
         }
         @media screen and (max-width: 550px) {
-            margin-bottom: -90%;
+            margin-bottom: -50%;
         }
         @media screen and (max-width: 500px) {
-            margin-bottom: -100%;
+            margin-bottom: -60%;
             h1 {
                 font-size: 280%;
             }
@@ -61,10 +61,10 @@
             }
         }
         @media screen and (max-width: 450px) {
-            margin-bottom: -110%;
+            margin-bottom: -70%;
         }
         @media screen and (max-width: 400px) {
-            margin-bottom: -140%;
+            margin-bottom: -90%;
             h1 {
                 padding-top: 0%;
                 font-size: 210%;
@@ -74,7 +74,7 @@
             }
         }
         @media screen and (max-width: 350px) {
-            margin-bottom: -160%;
+            margin-bottom: -100%;
             h1 {
                 font-size: 190%;
             }
@@ -83,7 +83,7 @@
             }
         }
         @media screen and (max-width: 330px) {
-            margin-bottom: -170%;
+            margin-bottom: -115%;
         }
     }
 
@@ -495,11 +495,11 @@
         }
         @media screen and (max-width: 750px) {
             .carousel {
-                width: 75vw;
+                width: 70vw;
                 height: 60vh;
                 &-inner {
                     .carousel-item {
-                        width: 75vw;
+                        width: 70vw;
                         height: 60vh;
                         background-image: url("../../assets/comentarios-movil.jpg");
                     }       
@@ -511,12 +511,12 @@
         }
         @media screen and (max-width: 450px) {
             .carousel {
-                width: 85vw;
-                height: 55vh;
+                width: 75vw;
+                height: 60vh;
                 &-inner {
                     .carousel-item {
-                        width: 85vw;
-                        height: 55vh;
+                        width: 75vw;
+                        height: 60vh;
                     }       
                 }
             }
@@ -524,11 +524,11 @@
         @media screen and (max-width: 400px) {
             .carousel {
                 width: 85vw;
-                height: 45vh;
+                height: 60vh;
                 &-inner {
                     .carousel-item {
                         width: 85vw;
-                        height: 45vh;
+                        height: 60vh;
                     }       
                 }
             }
@@ -536,11 +536,11 @@
         @media screen and (max-width: 350px) {
             .carousel {
                 width: 85vw;
-                height: 40vh;
+                height: 50vh;
                 &-inner {
                     .carousel-item {
                         width: 85vw;
-                        height: 40vh;
+                        height: 50vh;
                     }       
                 }
             }

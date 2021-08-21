@@ -1052,30 +1052,30 @@ footer {
     .nosotros .banner {
       background-size: contain;
       background-position: top;
-      margin-bottom: -50%; }
+      margin-bottom: -25%; }
       .nosotros .banner h1 {
         font-size: 300%; }
       .nosotros .banner p {
         font-size: 105%; } }
   @media screen and (max-width: 650px) {
     .nosotros .banner {
-      margin-bottom: -65%; } }
+      margin-bottom: -35%; } }
   @media screen and (max-width: 550px) {
     .nosotros .banner {
-      margin-bottom: -90%; } }
+      margin-bottom: -50%; } }
   @media screen and (max-width: 500px) {
     .nosotros .banner {
-      margin-bottom: -100%; }
+      margin-bottom: -60%; }
       .nosotros .banner h1 {
         font-size: 280%; }
       .nosotros .banner p {
         font-size: 90%; } }
   @media screen and (max-width: 450px) {
     .nosotros .banner {
-      margin-bottom: -110%; } }
+      margin-bottom: -70%; } }
   @media screen and (max-width: 400px) {
     .nosotros .banner {
-      margin-bottom: -140%; }
+      margin-bottom: -90%; }
       .nosotros .banner h1 {
         padding-top: 0%;
         font-size: 210%; }
@@ -1083,14 +1083,14 @@ footer {
         font-size: 90%; } }
   @media screen and (max-width: 350px) {
     .nosotros .banner {
-      margin-bottom: -160%; }
+      margin-bottom: -100%; }
       .nosotros .banner h1 {
         font-size: 190%; }
       .nosotros .banner p {
         font-size: 80%; } }
   @media screen and (max-width: 330px) {
     .nosotros .banner {
-      margin-bottom: -170%; } }
+      margin-bottom: -115%; } }
 
 .nosotros .quienes-somos {
   display: flex;
@@ -1406,35 +1406,35 @@ footer {
         height: 50vh; } }
   @media screen and (max-width: 750px) {
     .nosotros .boton-cursos .carousel {
-      width: 75vw;
+      width: 70vw;
       height: 60vh; }
       .nosotros .boton-cursos .carousel-inner .carousel-item {
-        width: 75vw;
+        width: 70vw;
         height: 60vh;
         background-image: url("../../assets/comentarios-movil.jpg"); }
     .nosotros .boton-cursos .boton {
       margin-top: 10%; } }
   @media screen and (max-width: 450px) {
     .nosotros .boton-cursos .carousel {
-      width: 85vw;
-      height: 55vh; }
+      width: 75vw;
+      height: 60vh; }
       .nosotros .boton-cursos .carousel-inner .carousel-item {
-        width: 85vw;
-        height: 55vh; } }
+        width: 75vw;
+        height: 60vh; } }
   @media screen and (max-width: 400px) {
     .nosotros .boton-cursos .carousel {
       width: 85vw;
-      height: 45vh; }
+      height: 60vh; }
       .nosotros .boton-cursos .carousel-inner .carousel-item {
         width: 85vw;
-        height: 45vh; } }
+        height: 60vh; } }
   @media screen and (max-width: 350px) {
     .nosotros .boton-cursos .carousel {
       width: 85vw;
-      height: 40vh; }
+      height: 50vh; }
       .nosotros .boton-cursos .carousel-inner .carousel-item {
         width: 85vw;
-        height: 40vh; } }
+        height: 50vh; } }
 
 .blobs-mobile .growpies-academy_div {
   display: flex;
