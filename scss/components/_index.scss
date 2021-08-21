@@ -28,6 +28,7 @@ main {
             height: 65vh;
         }
         @media screen and (max-width: 750px) {
+            background-size: 160%;
             height: 70vh;
         }
         @media screen and (max-width: 650px) {
@@ -51,6 +52,7 @@ main {
             height: 47vh;
         }
         @media screen and (max-width: 360px) {
+            background-size: 170%;
             height: 48vh;
         }
         @media screen and (max-width: 330px) {
@@ -217,23 +219,25 @@ main {
                 }
             }
             @media screen and (max-width: 385px) {
-                width: 75vw;
+                width: 95vw;
                 h1 {
                     padding-top: 4%;
                     font-size: 6.8vw;
                 }
                 p {
                     font-size: 3.2vw;
-                    width: 100%;
+                    width: 80%;
                 }
                 .back-botones {
-                    font-size: 2.4vw;
+                    font-size: 3vw;
                     padding-top: 5%;
                     .boton-cursos {
-                        width: 26vw;
+                        width: 37vw;
+                        height: 5vh;
                     }
                     .boton-conocenos {
-                        width: 26vw;
+                        width: 37vw;
+                        height: 5vh;
                         margin: 0% 7%;
                     }
                 }
