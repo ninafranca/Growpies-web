@@ -10,10 +10,10 @@ body {
     justify-content: start;
     align-items: left;
     position: relative;
-
-    .banner-text {
-        position: absolute;
-    }
+    background-image: url(../assets/hero-recursos-03.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .mainTitle {
         font-weight: 900;
@@ -42,12 +42,21 @@ body {
         color: #FFFFFF;
         margin: 0 0 0 6rem;
         font-size: 1rem;
+        padding-bottom: 30rem;
 
+        @media screen and (max-width: 992px) {
+            padding-bottom: 15rem;
+
+        }
 
         @media screen and (max-width: 768px) {
             font-size: .8rem;
             margin: 0 0 0 2.2rem;
             width: 40vw;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding-bottom: 8rem;
         }
     }
 

@@ -10,11 +10,10 @@ body {
     justify-content: start;
     align-items: left;
     position: relative;
-
-    .banner-text {
-        position: absolute;
-    }
-
+    background-image: url(../assets/hero-cursos2-02.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .mainTitle {
         font-weight: 900;
@@ -43,15 +42,19 @@ body {
         margin: 0 0 0 4.2rem;
         font-size: 1rem;
         line-height: 1.5rem;
+        padding-bottom: 30rem;
 
-        @media screen and (max-width: 768px) {
+
+        @media screen and (max-width: 992px) {
             font-size: .8rem;
             margin: 0 0 0 2.2rem;
+            padding-bottom: 15rem;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 576px) {
             font-size: .8rem;
             margin: 0 0 0 2.2rem;
+            padding-bottom: 8rem;
         }
     }
 }
