@@ -522,7 +522,7 @@ main {
                     .manos-secciones {
                         display: flex;
                         flex-direction: row;
-                        align-items: center;
+                        align-items: baseline;
                         margin-left: -3%;
                         img {
                             height: 5vh;
@@ -997,7 +997,7 @@ main {
             height: 80vh;
             .consulta {
                 .card {
-                    height: 65vh;
+                    height: 68vh;
                     &-body {
                         padding: 4%;
                         h3 {
@@ -1012,12 +1012,19 @@ main {
                 }
             }
         }
+        @media screen and (max-width: 1200px) {
+            .consulta {
+                .card {
+                    height: 75vh;
+                }
+            }
+        }
         @media screen and (max-width: 1180px) {
             height: 70vh;
             .consulta {
                 .card {
                     width: 27vw;
-                    height: 67vh;
+                    height: 72vh;
                     &-body {
                         padding: 4%;
                         h3 {
