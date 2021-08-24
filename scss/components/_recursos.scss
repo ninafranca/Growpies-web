@@ -329,7 +329,7 @@ body {
             @media screen and (max-width: 768px) {
 
                 flex-direction: column;
-                padding: 1rem;
+                padding: .5rem .2rem;
 
                 p {
                     max-height: 100px;
@@ -391,6 +391,7 @@ body {
 
                     @media screen and (max-width: 768px) {
                         align-self: flex-start;
+                        padding: .6rem 1rem;
                     }
                 }
             }
