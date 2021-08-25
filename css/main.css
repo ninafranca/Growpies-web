@@ -368,11 +368,15 @@ main {
           main .index-secciones_cards .index-secciones_card div .manos-secciones {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: flex-end;
             margin-left: -3%; }
             main .index-secciones_cards .index-secciones_card div .manos-secciones img {
               height: 5vh;
               padding-right: 5%; }
+            main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
+              padding: 0%;
+              margin: 0%;
+              text-align: start; }
       main .index-secciones_cards .cursos h3 {
         display: inline-block;
         background-position: 0 100%;
@@ -465,10 +469,17 @@ main {
             padding-top: 2.5%; }
             main .index-secciones_cards .index-secciones_card div p {
               width: 80%; }
-            main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-              height: 6vh; }
-            main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
-              font-size: 170%; } }
+            main .index-secciones_cards .index-secciones_card div .manos-secciones {
+              margin: 0%; }
+              main .index-secciones_cards .index-secciones_card div .manos-secciones img {
+                height: 6vh; }
+              main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
+                font-size: 170%; }
+        main .index-secciones a {
+          color: #272727;
+          margin: 0% 2.5%;
+          display: flex;
+          justify-content: center; } }
     @media screen and (max-width: 700px) {
       main .index-secciones {
         margin-top: 220%; } }
@@ -513,15 +524,19 @@ main {
       main .index-secciones {
         margin-top: 290%; }
         main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-          height: 7vh; } }
+          height: 7vh; }
+        main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
+          font-size: 140%; } }
     @media screen and (max-width: 360px) {
       main .index-secciones {
         margin-top: 300%; }
         main .index-secciones h2 {
           font-size: 130%;
           padding-bottom: 5%; }
+        main .index-secciones_cards .index-secciones_card div .manos-secciones img {
+          padding-right: 0%; }
         main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
-          font-size: 110%; } }
+          font-size: 130%; } }
     @media screen and (max-width: 335px) {
       main .index-secciones {
         margin-top: 310%; } }
