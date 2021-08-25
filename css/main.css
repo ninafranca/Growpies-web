@@ -371,8 +371,8 @@ main {
             align-items: baseline;
             margin-left: -3%; }
             main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-              height: 5vh;
-              padding-right: 15%; }
+              width: 8vw;
+              padding-right: 5%; }
       main .index-secciones_cards .cursos h3 {
         display: inline-block;
         background-position: 0 100%;
@@ -466,7 +466,7 @@ main {
             main .index-secciones_cards .index-secciones_card div p {
               width: 80%; }
             main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-              height: 5vw; }
+              height: 6vh; }
             main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
               font-size: 170%; } }
     @media screen and (max-width: 700px) {
@@ -478,9 +478,6 @@ main {
     @media screen and (max-width: 600px) {
       main .index-secciones {
         margin-top: 235%; } }
-    @media screen and (max-width: 575px) {
-      main .index-secciones {
-        margin-top: 220%; } }
     @media screen and (max-width: 575px) {
       main .index-secciones {
         margin-top: 220%; }
@@ -497,7 +494,7 @@ main {
         main .index-secciones h2 {
           font-size: 165%; }
         main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-          height: 6vw; }
+          height: 5vh; }
         main .index-secciones_cards .index-secciones_card div .manos-secciones h3 {
           font-size: 150%; } }
     @media screen and (max-width: 475px) {
@@ -516,7 +513,7 @@ main {
       main .index-secciones {
         margin-top: 290%; }
         main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-          height: 7vw; } }
+          height: 7vh; } }
     @media screen and (max-width: 360px) {
       main .index-secciones {
         margin-top: 300%; }
@@ -614,7 +611,7 @@ main {
         width: 50vw;
         height: 7vh; } }
   main .bloque-consulta {
-    padding-top: 40%;
+    padding-top: 50%;
     background-image: url("/assets/fondo-consulta.jpg");
     height: 100vh;
     background-position: top;
