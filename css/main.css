@@ -1564,6 +1564,12 @@ body {
       @media screen and (min-width: 992px) {
         .recomendados .contenedor-cards .card {
           flex-basis: 33.333%; } }
+      @media screen and (max-width: 991px) {
+        .recomendados .contenedor-cards .card {
+          width: 70%; } }
+      @media screen and (max-width: 768px) {
+        .recomendados .contenedor-cards .card {
+          width: 95%; } }
       .recomendados .contenedor-cards .card .card-title {
         font-weight: 800 !important;
         font-size: 1.1rem; }
@@ -1680,7 +1686,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../../assets/clases-priv2.jpg);
+  background-image: url(../assets/clases-priv2.jpg);
   background-position: top;
   background-size: cover;
   padding: 10rem 0 5rem 0; }
@@ -1943,7 +1949,7 @@ body {
       @media screen and (max-width: 768px) {
         .canales .canales-group .card-canal {
           flex-direction: column;
-          padding: 1rem; }
+          padding: .5rem .2rem; }
           .canales .canales-group .card-canal p {
             max-height: 100px;
             overflow-y: scroll; }
@@ -1984,7 +1990,8 @@ body {
           font-weight: 600; }
           @media screen and (max-width: 768px) {
             .canales .canales-group .card-canal .card-canal_text a {
-              align-self: flex-start; } }
+              align-self: flex-start;
+              padding: .6rem 1rem; } }
   .canales .ver-todo button {
     background-color: transparent;
     border: none;

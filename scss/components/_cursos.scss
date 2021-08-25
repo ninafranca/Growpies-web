@@ -105,6 +105,14 @@ body {
                 flex-basis: 33.333%;
             }
 
+            @media screen and (max-width:991px) {
+                width: 70%;
+            }
+
+            @media screen and (max-width:768px) {
+                width: 95%;
+            }
+
             .card-title {
                 font-weight: 800 !important;
                 font-size: 1.1rem;
@@ -284,7 +292,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../../assets/clases-priv2.jpg);
+    background-image: url(../assets/clases-priv2.jpg);
     background-position: top;
     background-size: cover;
     padding: 10rem 0 5rem 0;
