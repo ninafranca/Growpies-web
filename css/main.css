@@ -368,10 +368,10 @@ main {
           main .index-secciones_cards .index-secciones_card div .manos-secciones {
             display: flex;
             flex-direction: row;
-            align-items: baseline;
+            align-items: flex-start;
             margin-left: -3%; }
             main .index-secciones_cards .index-secciones_card div .manos-secciones img {
-              width: 8vw;
+              height: 5vh;
               padding-right: 5%; }
       main .index-secciones_cards .cursos h3 {
         display: inline-block;
@@ -534,7 +534,7 @@ main {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    padding: 5% 0% 5% 0%; }
+    padding: 5% 0% 10% 0%; }
     main .reservar-clase a {
       padding-top: 4%;
       font-weight: 600; }
