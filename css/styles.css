@@ -9,4 +9,5 @@ html *{
     -o-animation: fadein 0.7s;
     animation: fadein 0.7s;    
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
 }

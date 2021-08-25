@@ -3,6 +3,7 @@
 main {
     color: $color-negro;
     position: relative;
+    font-family: $font;
 
     .background {
         background-image: url("/assets/fondo-index.jpg");

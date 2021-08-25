@@ -1,6 +1,7 @@
 main {
   color: #272727;
-  position: relative; }
+  position: relative;
+  font-family: "Nunito", sans-serif; }
   main .background {
     background-image: url("/assets/fondo-index.jpg");
     height: 100vh;
@@ -79,7 +80,6 @@ main {
           width: 10vw;
           height: 6.5vh;
           font-size: 110%;
-          font-family: Arial, Helvetica, sans-serif;
           font-weight: 400; }
           main .background .card-texto .back-botones .boton-cursos:hover {
             border-color: #FC3657;
@@ -91,7 +91,6 @@ main {
           width: 10vw;
           height: 6.5vh;
           font-size: 110%;
-          font-family: Arial, Helvetica, sans-serif;
           font-weight: 400;
           margin: 0% 7%; }
           main .background .card-texto .back-botones .boton-conocenos:hover {
@@ -382,7 +381,8 @@ main {
         background-position: 0 100%;
         background-size: 0% 2px;
         background-repeat: no-repeat;
-        transition: background-size 0.3s, background-position 0s 0.3s;
+        transition: background-size 0.3s,
+ background-position 0s 0.3s;
         background-image: linear-gradient(#FBC72E, #FBC72E) !important; }
         main .index-secciones_cards .cursos h3:hover {
           background-position: 100% 100%;
@@ -394,7 +394,8 @@ main {
         background-position: 0 100%;
         background-size: 0% 2px;
         background-repeat: no-repeat;
-        transition: background-size 0.3s, background-position 0s 0.3s;
+        transition: background-size 0.3s,
+ background-position 0s 0.3s;
         background-image: linear-gradient(#FC3657, #FC3657) !important; }
         main .index-secciones_cards .recursos h3:hover {
           background-position: 100% 100%;
@@ -406,7 +407,8 @@ main {
         background-position: 0 100%;
         background-size: 0% 2px;
         background-repeat: no-repeat;
-        transition: background-size 0.3s, background-position 0s 0.3s;
+        transition: background-size 0.3s,
+ background-position 0s 0.3s;
         background-image: linear-gradient(#66D7D1, #66D7D1) !important; }
         main .index-secciones_cards .blog h3:hover {
           background-position: 100% 100%;
@@ -834,88 +836,90 @@ main {
   .index-secciones-desktop {
     display: none; } }
 
-header .menu-desktop {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f8f8f8; }
-  @media screen and (max-width: 750px) {
-    header .menu-desktop {
-      display: none; } }
-  header .menu-desktop nav {
-    margin-left: -25%;
-    width: 50%;
-    align-self: center;
-    padding: 0% 0% 0.1% 0%; }
-    header .menu-desktop nav a {
-      font-size: 1.5vw;
-      font-weight: 600;
-      color: #272727;
-      margin: 0% 2%;
-      display: inline-block;
-      background-position: 0 100%;
-      background-size: 0% 2px;
-      background-repeat: no-repeat;
-      transition: background-size 0.3s, background-position 0s 0.3s;
-      background-image: linear-gradient(#FC3657, #FC3657) !important; }
-      header .menu-desktop nav a:hover {
-        background-position: 100% 100%;
-        background-size: 100% 2px;
-        color: black; }
-      @media screen and (max-width: 1000px) {
-        header .menu-desktop nav a {
-          font-size: 1.7vw; } }
-  header .menu-desktop .a-logo {
-    align-self: center;
-    padding: 0.5% 0% 0.5% 3%; }
-    header .menu-desktop .a-logo .logo {
-      width: 5vw; }
-  header .menu-desktop .a-cart {
-    color: black;
-    align-self: center;
-    padding: 0% 2% 0% 5%; }
-    header .menu-desktop .a-cart .icono-cart {
-      height: 100%;
-      width: 2.2vw; }
-
-header .menu-mobile {
-  display: none; }
-  @media screen and (max-width: 750px) {
-    header .menu-mobile {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f8f8f8; }
-      header .menu-mobile .a-logo {
-        align-self: center;
-        padding: 0.5% 0% 0.5% 3%; }
-        header .menu-mobile .a-logo .logo {
-          width: 10vw; }
-      header .menu-mobile .mobile-div {
+header {
+  font-family: "Nunito", sans-serif !important; }
+  header .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8; }
+    @media screen and (max-width: 750px) {
+      header .menu-desktop {
+        display: none; } }
+    header .menu-desktop nav {
+      margin-left: -25%;
+      width: 50%;
+      align-self: center;
+      padding: 0% 0% 0.1% 0%; }
+      header .menu-desktop nav a {
+        font-size: 1.5vw;
+        font-weight: 600;
+        color: #272727;
+        margin: 0% 2%;
+        display: inline-block;
+        background-position: 0 100%;
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s,
+ background-position 0s 0.3s;
+        background-image: linear-gradient(#FC3657, #FC3657) !important; }
+        header .menu-desktop nav a:hover {
+          background-position: 100% 100%;
+          background-size: 100% 2px;
+          color: black; }
+        @media screen and (max-width: 1000px) {
+          header .menu-desktop nav a {
+            font-size: 1.7vw; } }
+    header .menu-desktop .a-logo {
+      align-self: center;
+      padding: 0.5% 0% 0.5% 3%; }
+      header .menu-desktop .a-logo .logo {
+        width: 5vw; }
+    header .menu-desktop .a-cart {
+      color: black;
+      align-self: center;
+      padding: 0% 2% 0% 5%; }
+      header .menu-desktop .a-cart .icono-cart {
+        height: 100%;
+        width: 2.2vw; }
+  header .menu-mobile {
+    display: none; }
+    @media screen and (max-width: 750px) {
+      header .menu-mobile {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
-        padding-right: 2%;
-        width: 50%; }
-        header .menu-mobile .mobile-div .a-cart {
-          color: black;
+        background-color: #f8f8f8; }
+        header .menu-mobile .a-logo {
           align-self: center;
-          margin: 0% 4%; }
-        header .menu-mobile .mobile-div .dropdown {
-          margin-top: 1%; }
-        header .menu-mobile .mobile-div a {
-          color: #272727; } }
-  @media screen and (max-width: 600px) {
-    header .menu-mobile .a-logo .logo {
-      width: 12vw; } }
-  @media screen and (max-width: 500px) {
-    header .menu-mobile .a-logo .logo {
-      width: 13vw; } }
-  @media screen and (max-width: 400px) {
-    header .menu-mobile .a-logo .logo {
-      width: 14vw; } }
-  @media screen and (max-width: 350px) {
-    header .menu-mobile .a-logo .logo {
-      width: 15vw; } }
+          padding: 0.5% 0% 0.5% 3%; }
+          header .menu-mobile .a-logo .logo {
+            width: 10vw; }
+        header .menu-mobile .mobile-div {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 2%;
+          width: 50%; }
+          header .menu-mobile .mobile-div .a-cart {
+            color: black;
+            align-self: center;
+            margin: 0% 4%; }
+          header .menu-mobile .mobile-div .dropdown {
+            margin-top: 1%; }
+          header .menu-mobile .mobile-div a {
+            color: #272727; } }
+    @media screen and (max-width: 600px) {
+      header .menu-mobile .a-logo .logo {
+        width: 12vw; } }
+    @media screen and (max-width: 500px) {
+      header .menu-mobile .a-logo .logo {
+        width: 13vw; } }
+    @media screen and (max-width: 400px) {
+      header .menu-mobile .a-logo .logo {
+        width: 14vw; } }
+    @media screen and (max-width: 350px) {
+      header .menu-mobile .a-logo .logo {
+        width: 15vw; } }
 
 @media screen and (max-width: 750px) {
   .menu-desktop {
@@ -1511,7 +1515,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
   .banner .mainTitle {
-<<<<<<< HEAD
     font-weight: 900;
     color: #FF637D;
     margin: 1em 0 0 3.5rem;
@@ -1531,7 +1534,7 @@ body {
     font-weight: 300;
     color: #FFFFFF;
     margin: 0 0 0 4.2rem;
-    font-size: 1rem;
+    font-size: 1.3vw;
     line-height: 1.5rem;
     padding-bottom: 30rem; }
     @media screen and (max-width: 992px) {
@@ -1544,39 +1547,9 @@ body {
         font-size: .8rem;
         margin: 0 0 0 2.2rem;
         padding-bottom: 8rem; } }
-=======
-    margin: 0.6em 0 0.2em 2rem;
-    font-size: 2rem;
-  }
-}
-.banner h1 {
-  font-weight: 300;
-  color: #FFFFFF;
-  margin: 0 0 0 4.2rem;
-  font-size: 1.3vw;
-  line-height: 1.5rem;
-  padding-bottom: 30rem;
-}
-@media screen and (max-width: 992px) {
-  .banner h1 {
-    font-size: 0.8rem;
-    margin: 0 0 0 2.2rem;
-    padding-bottom: 15rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .banner h1 {
-    font-size: 0.8rem;
-    margin: 0 0 0 2.2rem;
-    padding-bottom: 8rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .banner h1 {
-    padding-bottom: 40rem;
-  }
-}
->>>>>>> db676c504567b685f6b5b8829e0f58348f631cca
+    @media screen and (min-width: 1400px) {
+      .banner h1 {
+        padding-bottom: 40rem; } }
 
 .recomendados {
   display: flex;
@@ -1784,7 +1757,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
   .banner-rec .mainTitle {
-<<<<<<< HEAD
     font-weight: 900;
     color: #FF637D;
     margin: .7em 0 .2em 5.5rem;
@@ -1804,7 +1776,7 @@ body {
     font-weight: 300;
     color: #FFFFFF;
     margin: 0 0 0 6rem;
-    font-size: 1rem;
+    font-size: 1.3vw;
     padding-bottom: 30rem; }
     @media screen and (max-width: 992px) {
       .banner-rec h1 {
@@ -1817,45 +1789,9 @@ body {
     @media screen and (max-width: 576px) {
       .banner-rec h1 {
         padding-bottom: 8rem; } }
-=======
-    margin: 0.6em 0 0.2em 2rem;
-    font-size: 2rem;
-  }
-}
-.banner-rec h1 {
-  font-weight: 300;
-  color: #FFFFFF;
-  margin: 0 0 0 6rem;
-  font-size: 1.3vw;
-  padding-bottom: 30rem;
-}
-@media screen and (max-width: 992px) {
-  .banner-rec h1 {
-    padding-bottom: 15rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .banner-rec h1 {
-    font-size: 0.8rem;
-    margin: 0 0 0 2.2rem;
-    width: 40vw;
-  }
-}
-@media screen and (max-width: 576px) {
-  .banner-rec h1 {
-    padding-bottom: 8rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .banner-rec h1 {
-    padding-bottom: 40rem;
-  }
-}
-.banner-rec .banner-list {
-  margin: 2em 0 0 6rem;
-}
-@media screen and (max-width: 768px) {
->>>>>>> db676c504567b685f6b5b8829e0f58348f631cca
+    @media screen and (min-width: 1400px) {
+      .banner-rec h1 {
+        padding-bottom: 40rem; } }
   .banner-rec .banner-list {
     margin: 2em 0 0 6rem; }
     @media screen and (max-width: 768px) {
@@ -2091,3 +2027,6 @@ body {
 
 * {
   font-family: "Nunito", sans-serif; }
+
+body {
+  font-family: "Nunito", sans-serif !important; }
