@@ -1511,6 +1511,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
   .banner .mainTitle {
+<<<<<<< HEAD
     font-weight: 900;
     color: #FF637D;
     margin: 1em 0 0 3.5rem;
@@ -1543,6 +1544,39 @@ body {
         font-size: .8rem;
         margin: 0 0 0 2.2rem;
         padding-bottom: 8rem; } }
+=======
+    margin: 0.6em 0 0.2em 2rem;
+    font-size: 2rem;
+  }
+}
+.banner h1 {
+  font-weight: 300;
+  color: #FFFFFF;
+  margin: 0 0 0 4.2rem;
+  font-size: 1.3vw;
+  line-height: 1.5rem;
+  padding-bottom: 30rem;
+}
+@media screen and (max-width: 992px) {
+  .banner h1 {
+    font-size: 0.8rem;
+    margin: 0 0 0 2.2rem;
+    padding-bottom: 15rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner h1 {
+    font-size: 0.8rem;
+    margin: 0 0 0 2.2rem;
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .banner h1 {
+    padding-bottom: 40rem;
+  }
+}
+>>>>>>> db676c504567b685f6b5b8829e0f58348f631cca
 
 .recomendados {
   display: flex;
@@ -1750,6 +1784,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
   .banner-rec .mainTitle {
+<<<<<<< HEAD
     font-weight: 900;
     color: #FF637D;
     margin: .7em 0 .2em 5.5rem;
@@ -1782,6 +1817,45 @@ body {
     @media screen and (max-width: 576px) {
       .banner-rec h1 {
         padding-bottom: 8rem; } }
+=======
+    margin: 0.6em 0 0.2em 2rem;
+    font-size: 2rem;
+  }
+}
+.banner-rec h1 {
+  font-weight: 300;
+  color: #FFFFFF;
+  margin: 0 0 0 6rem;
+  font-size: 1.3vw;
+  padding-bottom: 30rem;
+}
+@media screen and (max-width: 992px) {
+  .banner-rec h1 {
+    padding-bottom: 15rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-rec h1 {
+    font-size: 0.8rem;
+    margin: 0 0 0 2.2rem;
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner-rec h1 {
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .banner-rec h1 {
+    padding-bottom: 40rem;
+  }
+}
+.banner-rec .banner-list {
+  margin: 2em 0 0 6rem;
+}
+@media screen and (max-width: 768px) {
+>>>>>>> db676c504567b685f6b5b8829e0f58348f631cca
   .banner-rec .banner-list {
     margin: 2em 0 0 6rem; }
     @media screen and (max-width: 768px) {
