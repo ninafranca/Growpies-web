@@ -2064,7 +2064,7 @@ body {
   font-weight: 300;
   color: #FFFFFF;
   margin: 0 0 0 4.2rem;
-  font-size: 1rem;
+  font-size: 1.3vw;
   line-height: 1.5rem;
   padding-bottom: 30rem;
 }
@@ -2080,6 +2080,11 @@ body {
     font-size: 0.8rem;
     margin: 0 0 0 2.2rem;
     padding-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .banner h1 {
+    padding-bottom: 40rem;
   }
 }
 
@@ -2369,7 +2374,7 @@ body {
   font-weight: 300;
   color: #FFFFFF;
   margin: 0 0 0 6rem;
-  font-size: 1rem;
+  font-size: 1.3vw;
   padding-bottom: 30rem;
 }
 @media screen and (max-width: 992px) {
@@ -2387,6 +2392,11 @@ body {
 @media screen and (max-width: 576px) {
   .banner-rec h1 {
     padding-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .banner-rec h1 {
+    padding-bottom: 40rem;
   }
 }
 .banner-rec .banner-list {
